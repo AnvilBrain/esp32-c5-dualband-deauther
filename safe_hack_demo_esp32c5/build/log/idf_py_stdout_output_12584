@@ -1,0 +1,1124 @@
+Command: C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:\Users\user\Desktop\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\safe_hack_demo_esp32c5.elf C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\bootloader.elf --force-color -m 'C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'C:\Users\user\Desktop\esp-idf\tools\idf.py'
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x1 (POWERON),boot:0x79 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:2
+load:0x408556b0,len:0x1744
+load:0x4084bba0,len:0xd94
+load:0x4084e5a0,len:0x3078
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5-dev-3951-ga74725a31b-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 24 2025 01:39:23[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (29) boot.esp32c5: SPI Speed      : 40MHz[0m
+[0;32mI (33) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=420c0020 size=22234h (139828) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=0003225c vaddr=40800000 size=0ddbch ( 56764) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b6640h (747072) map[0m
+[0;32mI (285) esp_image: segment 3: paddr=000f6668 vaddr=4080ddbc size=05640h ( 22080) load[0m
+[0;32mI (291) esp_image: segment 4: paddr=000fbcb0 vaddr=40813400 size=03cd8h ( 15576) load[0m
+[0;32mI (300) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (300) boot: Disabling RNG early entropy source...[0m
+[0;32mI (311) cpu_start: Unicore app[0m
+[0;33mW (319) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (325) cpu_start: Pro cpu start user code[0m
+[0;32mI (325) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (325) app_init: Application information:[0m
+[0;32mI (325) app_init: Project name:     safe_hack_demo_esp32c5[0m
+[0;32mI (330) app_init: App version:      1[0m
+[0;32mI (334) app_init: Compile time:     Oct 24 2025 01:39:03[0m
+[0;32mI (339) app_init: ELF file SHA256:  8aea5b12b...[0m
+[0;32mI (343) app_init: ESP-IDF:          v5.5-dev-3951-ga74725a31b-dirty[0m
+[0;32mI (349) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (353) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (357) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (361) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (367) heap_init: At 4081CA70 len 0003FB30 (254 KiB): RAM[0m
+[0;32mI (372) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (377) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (384) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (389) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (402) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (408) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (415) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (433) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (433) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (443) deauther: [0m
+[0;32mI (443) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (443) deauther: ║   ESP32-C5 Dual-Band Deauther v3.0    ║[0m
+[0;32mI (453) deauther: ║   Simultaneous 2.4GHz + 5GHz Attack   ║[0m
+[0;32mI (453) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (473) deauther: [0m
+[0;32mI (473) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (473) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (493) wifi:wifi driver task: 40822af0, prio:23, stack:6656, core=0[0m
+[0;32mI (493) wifi:wifi firmware version: d88df9f[0m
+[0;32mI (493) wifi:wifi certification version: v7.0[0m
+[0;32mI (493) wifi:config NVS flash: enabled[0m
+[0;32mI (493) wifi:config nano formatting: disabled[0m
+[0;32mI (503) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (513) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (513) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (513) wifi:Init management short buffer num: 32[0m
+[0;32mI (523) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (523) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (533) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (533) wifi:Init static rx buffer num: 10[0m
+[0;32mI (543) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (543) wifi_init: rx ba win: 6[0m
+[0;32mI (543) wifi_init: accept mbox: 6[0m
+[0;32mI (553) wifi_init: tcpip mbox: 32[0m
+[0;32mI (553) wifi_init: udp mbox: 6[0m
+[0;32mI (553) wifi_init: tcp mbox: 6[0m
+[0;32mI (553) wifi_init: tcp tx win: 5760[0m
+[0;32mI (563) wifi_init: tcp rx win: 5760[0m
+[0;32mI (563) wifi_init: tcp mss: 1440[0m
+[0;32mI (563) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (573) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (573) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (583) phy_init: phy_version 100,b0bde74c,Apr 27 2025,16:38:14[0m
+[0;33mW (1153) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (1153) wifi:WDEV_RXOFDM_DELAY:258[0m
+[0;33mW (1153) wifi:WDEV_RX_11G_OFDM_DELAY:259[0m
+[0;33mW (1153) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (1153) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (1163) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1173) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1173) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (1183) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (1193) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (1203) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (1203) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (1213) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1213) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1223) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1223) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1233) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1233) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1243) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (1243) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (1253) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (1263) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (1263) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (1273) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (1273) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (1283) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (1283) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (1293) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (1303) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (1313) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (1323) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1323) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1333) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1343) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1353) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (1363) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (1373) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (1373) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1383) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (1393) wifi:enable tsf[0m
+[0;33mW (1393) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (1403) wifi:11ax/11ac mode can not work under phy bw 40M, the sta 2G phymode changed to 11N[0m
+[0;33mW (1403) wifi:11ax/11ac mode can not work under phy bw 40M, the sta 5G phymode changed to 11N[0m
+[0;32mI (1423) wifi:Total power save buffer number: 16[0m
+[0;32mI (1423) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1423) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1433) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1433) deauther: [0m
+[0;32mI (1433) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (1453) deauther: ║   ESP32-C5 DUAL-BAND DEAUTHER         ║[0m
+[0;32mI (1453) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (1473) deauther: 📡 SSID: ESP32-Deauther[0m
+[0;32mI (1473) deauther: 🔑 Password: 12345678[0m
+[0;32mI (1473) deauther: 🌐 Web Interface: http://192.168.4.1/[0m
+[0;32mI (1483) deauther: ⚡ Mode: Simultaneous 2.4GHz + 5GHz[0m
+[0;32mI (1483) deauther: ⚠️  USE ONLY ON YOUR OWN NETWORKS![0m
+[0;32mI (1493) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1503) wifi:(trc)phytype:HT40-SGI, snr:60, maxRate:144, highestRateIdx:0[0m
+[0;33mW (1503) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1513) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:60, ampduState:wait operational[0m
+[0;32mI (1523) wifi:ifidx:1, rssi:-36, nf:-96, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (1533) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (1543) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (1553) deauther: [0m
+[0;32mI (1553) deauther: ✅ Web server started[0m
+[0;32mI (2983) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (2983) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3033) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3063) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (4913) wifi:conn=0x4082a310 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (4913) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:223, win:64), CONF:0xc0000001[0m
+[0;32mI (18033) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (18033) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (18033) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (18043) wifi:station: 90:de:80:97:ac:ce leave, AID = 1, reason = 8, bss_flags is 756835, bss:0x4082c5ac[0m
+[0;32mI (18053) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25703) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25703) wifi:(trc)phytype:HT40-SGI, snr:52, maxRate:144, highestRateIdx:0[0m
+[0;33mW (25703) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (25713) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:52, ampduState:wait operational[0m
+[0;32mI (25723) wifi:ifidx:1, rssi:-39, nf:-91, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (25743) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (25743) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (26773) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (26793) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (26803) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (28993) wifi:conn=0x4082a310 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (28993) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:77, win:64), CONF:0xc0000001[0m
+[0;32mI (37543) deauther: 🔍 Starting WiFi scan (2.4GHz + 5GHz)...[0m
+[0;32mI (45753) deauther: ✅ Found 26 networks[0m
+[0;32mI (68463) deauther: [0m
+[0;32mI (68463) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (68463) deauther: ║   DUAL-BAND DEAUTH ATTACK STARTED     ║[0m
+[0;32mI (68473) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (68483) deauther: 📡 2.4GHz Target: GDR[0m
+[0;32mI (68493) deauther:    BSSID: 54:76:B2:A3:38:FD | CH: 11[0m
+[0;32mI (68493) deauther: 📡 5GHz Target: GDR-5G[0m
+[0;32mI (68503) deauther:    BSSID: 54:76:B2:A3:38:FE | CH: 56[0m
+[0;32mI (68503) deauther: ⏱️  Duration: 30 seconds[0m
+[0;32mI (68513) deauther: 🔥 Mode: DUAL-BAND RAPID SWITCHING[0m
+[0;32mI (68513) deauther: [0m
+[0;32mI (68513) deauther: 🔌 Switching to STA mode (AP disabled)...[0m
+[0;32mI (68523) wifi:station: 90:de:80:97:ac:ce leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x4082e72c[0m
+[0;32mI (68533) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (68543) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (68543) wifi:mode : sta (3c:dc:75:80:f1:b0)[0m
+[0;33mW (68543) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (69053) deauther: 💥 DUAL ATTACK STARTED - RAPID BAND SWITCHING![0m
+[0;32mI (69053) deauther: [0m
+[0;32mI (70383) deauther: 💥 [ 2/30 sec] Total:   9120 pkt | PPS: 4560 | Cycles: 456 | Remaining: 28 sec[0m
+[0;32mI (70383) deauther:    📻 2.4GHz:   4560 pkt (2280 pps)[0m
+[0;32mI (70383) deauther:    📻 5GHz:     4560 pkt (2280 pps)[0m
+[0;32mI (70393) deauther: [0m
+[0;32mI (72383) deauther: 💥 [ 4/30 sec] Total:  22620 pkt | PPS: 5655 | Cycles: 1131 | Remaining: 26 sec[0m
+[0;32mI (72383) deauther:    📻 2.4GHz:  11310 pkt (2828 pps)[0m
+[0;32mI (72383) deauther:    📻 5GHz:    11310 pkt (2828 pps)[0m
+[0;32mI (72393) deauther: [0m
+[1;31mE (74033) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (74033) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (74033) task_wdt: Tasks currently running:[0m
+[1;31mE (74033) task_wdt: CPU 0: dual_attack[0m
+[1;31mE (74033) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4200bf8c  RA      : 0x42040c56  SP      : 0x408310e0  GP      : 0x40813c04  
+TP      : 0x40831180  T0      : 0x40038640  T1      : 0x0000000f  T2      : 0x00000200  
+S0/FP   : 0x4082cb24  S1      : 0x40860000  A0      : 0x408318e0  A1      : 0xffffffff  
+A2      : 0x00000000  A3      : 0x00000005  A4      : 0x00000000  A5      : 0x4200bf8a  
+A6      : 0x00000008  A7      : 0x00000054  S2      : 0x00000000  S3      : 0x00000693  
+S4      : 0x00000004  S5      : 0x40818000  S6      : 0x40800000  S7      : 0x0000001e  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x11eb851f  T6      : 0x00b4f5c2  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (74383) deauther: 💥 [ 6/30 sec] Total:  35120 pkt | PPS: 5853 | Cycles: 1756 | Remaining: 24 sec[0m
+[0;32mI (74383) deauther:    📻 2.4GHz:  17560 pkt (2927 pps)[0m
+[0;32mI (74383) deauther:    📻 5GHz:    17560 pkt (2927 pps)[0m
+[0;32mI (74393) deauther: [0m
+[0;32mI (76383) deauther: 💥 [ 8/30 sec] Total:  48620 pkt | PPS: 6078 | Cycles: 2431 | Remaining: 22 sec[0m
+[0;32mI (76383) deauther:    📻 2.4GHz:  24310 pkt (3039 pps)[0m
+[0;32mI (76383) deauther:    📻 5GHz:    24310 pkt (3039 pps)[0m
+[0;32mI (76393) deauther: [0m
+[0;32mI (78383) deauther: 💥 [10/30 sec] Total:  62140 pkt | PPS: 6214 | Cycles: 3107 | Remaining: 20 sec[0m
+[0;32mI (78383) deauther:    📻 2.4GHz:  31070 pkt (3107 pps)[0m
+[0;32mI (78383) deauther:    📻 5GHz:    31070 pkt (3107 pps)[0m
+[0;32mI (78393) deauther: [0m
+[1;31mE (79033) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (79033) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (79033) task_wdt: Tasks currently running:[0m
+[1;31mE (79033) task_wdt: CPU 0: wifi[0m
+[1;31mE (79033) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc0  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x000014a0  A0      : 0x00011940  A1      : 0x05921363  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x6ab95cea  A5      : 0x6aba5cea  
+A6      : 0x00000010  A7      : 0x80000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x000014a0  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01b80000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (80383) deauther: 💥 [12/30 sec] Total:  74980 pkt | PPS: 6248 | Cycles: 3749 | Remaining: 18 sec[0m
+[0;32mI (80383) deauther:    📻 2.4GHz:  37490 pkt (3124 pps)[0m
+[0;32mI (80383) deauther:    📻 5GHz:    37490 pkt (3124 pps)[0m
+[0;32mI (80393) deauther: [0m
+[0;32mI (82383) deauther: 💥 [14/30 sec] Total:  88420 pkt | PPS: 6316 | Cycles: 4421 | Remaining: 16 sec[0m
+[0;32mI (82383) deauther:    📻 2.4GHz:  44210 pkt (3158 pps)[0m
+[0;32mI (82383) deauther:    📻 5GHz:    44210 pkt (3158 pps)[0m
+[0;32mI (82393) deauther: [0m
+[1;31mE (84033) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (84033) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (84033) task_wdt: Tasks currently running:[0m
+[1;31mE (84033) task_wdt: CPU 0: wifi[0m
+[1;31mE (84033) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x408097e2  RA      : 0x40809878  SP      : 0x40822820  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x4002d624  T1      : 0x400004a0  T2      : 0x002c002c  
+S0/FP   : 0x00000063  S1      : 0x40822940  A0      : 0x0000001f  A1      : 0xffffffef  
+A2      : 0x600af804  A3      : 0x04000063  A4      : 0x00000000  A5      : 0x4081c000  
+A6      : 0x0000000b  A7      : 0x00000002  S2      : 0x40822920  S3      : 0x408228d0  
+S4      : 0x40822920  S5      : 0x408228d0  S6      : 0x40814e44  S7      : 0x00000091  
+S8      : 0x00000091  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x002c002c  T5      : 0x086c0c00  T6      : 0x0000d2f0  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (84383) deauther: 💥 [16/30 sec] Total: 101100 pkt | PPS: 6319 | Cycles: 5055 | Remaining: 14 sec[0m
+[0;32mI (84383) deauther:    📻 2.4GHz:  50550 pkt (3159 pps)[0m
+[0;32mI (84383) deauther:    📻 5GHz:    50550 pkt (3159 pps)[0m
+[0;32mI (84393) deauther: [0m
+[0;32mI (86383) deauther: 💥 [18/30 sec] Total: 114500 pkt | PPS: 6361 | Cycles: 5725 | Remaining: 12 sec[0m
+[0;32mI (86383) deauther:    📻 2.4GHz:  57250 pkt (3181 pps)[0m
+[0;32mI (86383) deauther:    📻 5GHz:    57250 pkt (3181 pps)[0m
+[0;32mI (86393) deauther: [0m
+[0;32mI (88383) deauther: 💥 [20/30 sec] Total: 127940 pkt | PPS: 6397 | Cycles: 6397 | Remaining: 10 sec[0m
+[0;32mI (88383) deauther:    📻 2.4GHz:  63970 pkt (3198 pps)[0m
+[0;32mI (88383) deauther:    📻 5GHz:    63970 pkt (3198 pps)[0m
+[0;32mI (88393) deauther: [0m
+[1;31mE (89033) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (89033) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (89033) task_wdt: Tasks currently running:[0m
+[1;31mE (89033) task_wdt: CPU 0: wifi[0m
+[1;31mE (89033) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc0  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x0000099e  A0      : 0x00011940  A1      : 0x05300068  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0xf9c7357e  A5      : 0xf9c774ea  
+A6      : 0x00000010  A7      : 0x00000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01cda000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (90383) deauther: 💥 [22/30 sec] Total: 140660 pkt | PPS: 6394 | Cycles: 7033 | Remaining:  8 sec[0m
+[0;32mI (90383) deauther:    📻 2.4GHz:  70330 pkt (3197 pps)[0m
+[0;32mI (90383) deauther:    📻 5GHz:    70330 pkt (3197 pps)[0m
+[0;32mI (90393) deauther: [0m
+[0;32mI (92383) deauther: 💥 [24/30 sec] Total: 154160 pkt | PPS: 6423 | Cycles: 7708 | Remaining:  6 sec[0m
+[0;32mI (92383) deauther:    📻 2.4GHz:  77080 pkt (3212 pps)[0m
+[0;32mI (92383) deauther:    📻 5GHz:    77080 pkt (3212 pps)[0m
+[0;32mI (92393) deauther: [0m
+[1;31mE (94033) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (94033) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (94033) task_wdt: Tasks currently running:[0m
+[1;31mE (94033) task_wdt: CPU 0: wifi[0m
+[1;31mE (94033) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x420576d4  RA      : 0x42039b1a  SP      : 0x408229c0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x4002d624  T1      : 0x00002000  T2      : 0x002c002c  
+S0/FP   : 0x4203c000  S1      : 0x408183dc  A0      : 0x00000003  A1      : 0x00000001  
+A2      : 0x4203946c  A3      : 0x001c1174  A4      : 0x40814368  A5      : 0x0000000a  
+A6      : 0x00002009  A7      : 0x42039d86  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000001  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x002c002c  T5      : 0x086c0c00  T6      : 0x0000d2f0  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (94383) deauther: 💥 [26/30 sec] Total: 166780 pkt | PPS: 6415 | Cycles: 8339 | Remaining:  4 sec[0m
+[0;32mI (94383) deauther:    📻 2.4GHz:  83390 pkt (3207 pps)[0m
+[0;32mI (94383) deauther:    📻 5GHz:    83390 pkt (3207 pps)[0m
+[0;32mI (94393) deauther: [0m
+[0;32mI (96383) deauther: 💥 [28/30 sec] Total: 180200 pkt | PPS: 6436 | Cycles: 9010 | Remaining:  2 sec[0m
+[0;32mI (96383) deauther:    📻 2.4GHz:  90100 pkt (3218 pps)[0m
+[0;32mI (96383) deauther:    📻 5GHz:    90100 pkt (3218 pps)[0m
+[0;32mI (96393) deauther: [0m
+[0;32mI (98383) deauther: ⏰ Attack duration expired![0m
+[0;32mI (98383) deauther: [0m
+[0;32mI (98383) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (98393) deauther: ║      DUAL-BAND ATTACK COMPLETED       ║[0m
+[0;32mI (98393) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (98403) deauther: 📊 STATISTICS:[0m
+[0;32mI (98413) deauther:    Total packets: 193440[0m
+[0;32mI (98413) deauther:    Total time: 30 seconds[0m
+[0;32mI (98423) deauther:    Average PPS: 6448 packets/sec[0m
+[0;32mI (98423) deauther:    Band switches: 9672 cycles (322.4/sec)[0m
+[0;32mI (98433) deauther: [0m
+[0;32mI (98433) deauther: 📻 2.4GHz: 96720 packets (3224 pps)[0m
+[0;32mI (98433) deauther: 📻 5GHz:   96720 packets (3224 pps)[0m
+[0;32mI (98443) deauther: [0m
+[0;32mI (98443) deauther: 💪 Effectiveness: EXCELLENT[0m
+[0;32mI (98443) deauther: [0m
+[0;32mI (98453) deauther: 🔄 Restoring AP mode...[0m
+[0;32mI (98453) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (98463) wifi:Total power save buffer number: 16[0m
+[0;32mI (98463) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (98473) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (98483) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (98493) wifi:Total power save buffer number: 16[0m
+[0;32mI (98493) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (98493) deauther: ✅ Web interface restored at http://192.168.4.1/[0m
+[0;32mI (98503) deauther: ✅ Ready for next attack. Reconnect to ESP32-Deauther WiFi.[0m
+[0;32mI (116583) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (116593) wifi:(trc)phytype:HT40-SGI, snr:54, maxRate:144, highestRateIdx:0[0m
+[0;33mW (116593) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (116603) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:54, ampduState:wait operational[0m
+[0;32mI (116613) wifi:ifidx:1, rssi:-38, nf:-92, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (116623) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (116633) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (116683) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (116683) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (116693) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (119383) wifi:conn=0x4082bed4 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (119383) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:119, win:64), CONF:0xc0000001[0m
+[0;32mI (150533) deauther: 🔍 Starting WiFi scan (2.4GHz + 5GHz)...[0m
+[0;32mI (158733) deauther: ✅ Found 24 networks[0m
+[0;32mI (197523) deauther: [0m
+[0;32mI (197523) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (197523) deauther: ║   DUAL-BAND DEAUTH ATTACK STARTED     ║[0m
+[0;32mI (197533) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (197543) deauther: 📡 2.4GHz Target: GDR[0m
+[0;32mI (197543) deauther:    BSSID: 54:76:B2:A3:38:FD | CH: 11[0m
+[0;32mI (197553) deauther: 📡 5GHz Target: GDR-5G[0m
+[0;32mI (197553) deauther:    BSSID: 54:76:B2:A3:38:FE | CH: 56[0m
+[0;32mI (197563) deauther: ⏱️  Duration: 60 seconds[0m
+[0;32mI (197563) deauther: 🔥 Mode: DUAL-BAND RAPID SWITCHING[0m
+[0;32mI (197573) deauther: [0m
+[0;32mI (197573) deauther: 🔌 Switching to STA mode (AP disabled)...[0m
+[0;32mI (197583) wifi:station: 90:de:80:97:ac:ce leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x4082b424[0m
+[0;32mI (197593) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (197603) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (197603) wifi:mode : sta (3c:dc:75:80:f1:b0)[0m
+[0;33mW (197603) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (198113) deauther: 💥 DUAL ATTACK STARTED - RAPID BAND SWITCHING![0m
+[0;32mI (198113) deauther: [0m
+[0;32mI (199383) deauther: 💥 [ 2/60 sec] Total:   8680 pkt | PPS: 4340 | Cycles: 434 | Remaining: 58 sec[0m
+[0;32mI (199383) deauther:    📻 2.4GHz:   4340 pkt (2170 pps)[0m
+[0;32mI (199383) deauther:    📻 5GHz:     4340 pkt (2170 pps)[0m
+[0;32mI (199393) deauther: [0m
+[0;32mI (201383) deauther: 💥 [ 4/60 sec] Total:  22140 pkt | PPS: 5535 | Cycles: 1107 | Remaining: 56 sec[0m
+[0;32mI (201383) deauther:    📻 2.4GHz:  11070 pkt (2768 pps)[0m
+[0;32mI (201383) deauther:    📻 5GHz:    11070 pkt (2768 pps)[0m
+[0;32mI (201393) deauther: [0m
+[1;31mE (203093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (203093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (203093) task_wdt: Tasks currently running:[0m
+[1;31mE (203093) task_wdt: CPU 0: wifi[0m
+[1;31mE (203093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc2  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x000014a0  A0      : 0x00011940  A1      : 0x05921363  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x596b9213  A5      : 0x000014d4  
+A6      : 0x00000010  A7      : 0x80000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x000014a0  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01b80000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (203383) deauther: 💥 [ 6/60 sec] Total:  34900 pkt | PPS: 5817 | Cycles: 1745 | Remaining: 54 sec[0m
+[0;32mI (203383) deauther:    📻 2.4GHz:  17450 pkt (2908 pps)[0m
+[0;32mI (203383) deauther:    📻 5GHz:    17450 pkt (2908 pps)[0m
+[0;32mI (203393) deauther: [0m
+[0;32mI (205383) deauther: 💥 [ 8/60 sec] Total:  48280 pkt | PPS: 6035 | Cycles: 2414 | Remaining: 52 sec[0m
+[0;32mI (205383) deauther:    📻 2.4GHz:  24140 pkt (3018 pps)[0m
+[0;32mI (205383) deauther:    📻 5GHz:    24140 pkt (3018 pps)[0m
+[0;32mI (205393) deauther: [0m
+[0;32mI (207383) deauther: 💥 [10/60 sec] Total:  61700 pkt | PPS: 6170 | Cycles: 3085 | Remaining: 50 sec[0m
+[0;32mI (207383) deauther:    📻 2.4GHz:  30850 pkt (3085 pps)[0m
+[0;32mI (207383) deauther:    📻 5GHz:    30850 pkt (3085 pps)[0m
+[0;32mI (207393) deauther: [0m
+[1;31mE (208093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (208093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (208093) task_wdt: Tasks currently running:[0m
+[1;31mE (208093) task_wdt: CPU 0: wifi[0m
+[1;31mE (208093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x400114a0  RA      : 0x4001149c  SP      : 0x408229e0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x40038640  T1      : 0x40000ccc  T2      : 0x002c002c  
+S0/FP   : 0x40860000  S1      : 0x00000000  A0      : 0x4082ac24  A1      : 0x4082ac74  
+A2      : 0x00000001  A3      : 0x000c8040  A4      : 0x00000000  A5      : 0x40820174  
+A6      : 0x00000008  A7      : 0x42039d86  S2      : 0x4082ac24  S3      : 0x00000001  
+S4      : 0x4085f98c  S5      : 0x4004a7e4  S6      : 0x00000001  S7      : 0x00000004  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x002c002c  T5      : 0x086c0c00  T6      : 0x0000d2f0  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (209383) deauther: 💥 [12/60 sec] Total:  74380 pkt | PPS: 6198 | Cycles: 3719 | Remaining: 48 sec[0m
+[0;32mI (209383) deauther:    📻 2.4GHz:  37190 pkt (3099 pps)[0m
+[0;32mI (209383) deauther:    📻 5GHz:    37190 pkt (3099 pps)[0m
+[0;32mI (209393) deauther: [0m
+[0;32mI (211383) deauther: 💥 [14/60 sec] Total:  87780 pkt | PPS: 6270 | Cycles: 4389 | Remaining: 46 sec[0m
+[0;32mI (211383) deauther:    📻 2.4GHz:  43890 pkt (3135 pps)[0m
+[0;32mI (211383) deauther:    📻 5GHz:    43890 pkt (3135 pps)[0m
+[0;32mI (211393) deauther: [0m
+[1;31mE (213093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (213093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (213093) task_wdt: Tasks currently running:[0m
+[1;31mE (213093) task_wdt: CPU 0: wifi[0m
+[1;31mE (213093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x42099416  RA      : 0x420993f4  SP      : 0x40822850  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x008401ff  T1      : 0x000401ff  T2      : 0x007801ff  
+S0/FP   : 0x001409ff  S1      : 0x001805ff  A0      : 0x4082289c  A1      : 0x40816ac4  
+A2      : 0x00000020  A3      : 0x00a401ff  A4      : 0x00946000  A5      : 0x4082287c  
+A6      : 0x00000000  A7      : 0x001401ff  S2      : 0x0098b1ff  S3      : 0x000801ff  
+S4      : 0x00a80bff  S5      : 0x00e40000  S6      : 0x00940000  S7      : 0x40816a50  
+S8      : 0x009403ff  S9      : 0x00080000  S10     : 0x00f40000  S11     : 0x00f20000  
+T3      : 0x00e401ff  T4      : 0x00a801ff  T5      : 0x009801ff  T6      : 0x008801ff  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (213383) deauther: 💥 [16/60 sec] Total: 100500 pkt | PPS: 6281 | Cycles: 5025 | Remaining: 44 sec[0m
+[0;32mI (213383) deauther:    📻 2.4GHz:  50250 pkt (3141 pps)[0m
+[0;32mI (213383) deauther:    📻 5GHz:    50250 pkt (3141 pps)[0m
+[0;32mI (213393) deauther: [0m
+[0;32mI (215383) deauther: 💥 [18/60 sec] Total: 113840 pkt | PPS: 6324 | Cycles: 5692 | Remaining: 42 sec[0m
+[0;32mI (215383) deauther:    📻 2.4GHz:  56920 pkt (3162 pps)[0m
+[0;32mI (215383) deauther:    📻 5GHz:    56920 pkt (3162 pps)[0m
+[0;32mI (215393) deauther: [0m
+[0;32mI (217383) deauther: 💥 [20/60 sec] Total: 127220 pkt | PPS: 6361 | Cycles: 6361 | Remaining: 40 sec[0m
+[0;32mI (217383) deauther:    📻 2.4GHz:  63610 pkt (3180 pps)[0m
+[0;32mI (217383) deauther:    📻 5GHz:    63610 pkt (3180 pps)[0m
+[0;32mI (217393) deauther: [0m
+[1;31mE (218093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (218093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (218093) task_wdt: Tasks currently running:[0m
+[1;31mE (218093) task_wdt: CPU 0: wifi[0m
+[1;31mE (218093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4209c328  RA      : 0x4209aff6  SP      : 0x40822970  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x0000000e  T1      : 0x40814e44  T2      : 0x00000001  
+S0/FP   : 0x408229cc  S1      : 0x0000001d  A0      : 0x0000099e  A1      : 0x00000000  
+A2      : 0x4082299c  A3      : 0x40814e58  A4      : 0x0000003c  A5      : 0x40814e54  
+A6      : 0x00000050  A7      : 0x00000050  S2      : 0x0000002b  S3      : 0x00000000  
+S4      : 0x40860000  S5      : 0x00000001  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000014  T4      : 0x00000050  T5      : 0x00000003  T6      : 0x00000008  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (219383) deauther: 💥 [22/60 sec] Total: 140020 pkt | PPS: 6365 | Cycles: 7001 | Remaining: 38 sec[0m
+[0;32mI (219383) deauther:    📻 2.4GHz:  70010 pkt (3182 pps)[0m
+[0;32mI (219383) deauther:    📻 5GHz:    70010 pkt (3182 pps)[0m
+[0;32mI (219393) deauther: [0m
+[0;32mI (221383) deauther: 💥 [24/60 sec] Total: 153320 pkt | PPS: 6388 | Cycles: 7666 | Remaining: 36 sec[0m
+[0;32mI (221383) deauther:    📻 2.4GHz:  76660 pkt (3194 pps)[0m
+[0;32mI (221383) deauther:    📻 5GHz:    76660 pkt (3194 pps)[0m
+[0;32mI (221393) deauther: [0m
+[1;31mE (223093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (223093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (223093) task_wdt: Tasks currently running:[0m
+[1;31mE (223093) task_wdt: CPU 0: wifi[0m
+[1;31mE (223093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x408039c8  RA      : 0x42059f9a  SP      : 0x40822a50  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x40038640  T1      : 0x0000000f  T2      : 0x002c002c  
+S0/FP   : 0x4082cb24  S1      : 0x00000000  A0      : 0x00000001  A1      : 0x00000001  
+A2      : 0x00000000  A3      : 0x00000002  A4      : 0x00000002  A5      : 0x408039c8  
+A6      : 0x00002009  A7      : 0x42039d86  S2      : 0x408183dc  S3      : 0x40860000  
+S4      : 0x40860000  S5      : 0x00000000  S6      : 0x4085ff28  S7      : 0x4004a000  
+S8      : 0x40860000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x002c002c  T5      : 0x086c0c00  T6      : 0x0000d2f0  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (223383) deauther: 💥 [26/60 sec] Total: 166120 pkt | PPS: 6389 | Cycles: 8306 | Remaining: 34 sec[0m
+[0;32mI (223383) deauther:    📻 2.4GHz:  83060 pkt (3195 pps)[0m
+[0;32mI (223383) deauther:    📻 5GHz:    83060 pkt (3195 pps)[0m
+[0;32mI (223393) deauther: [0m
+[0;32mI (225383) deauther: 💥 [28/60 sec] Total: 179560 pkt | PPS: 6413 | Cycles: 8978 | Remaining: 32 sec[0m
+[0;32mI (225383) deauther:    📻 2.4GHz:  89780 pkt (3206 pps)[0m
+[0;32mI (225383) deauther:    📻 5GHz:    89780 pkt (3206 pps)[0m
+[0;32mI (225393) deauther: [0m
+[0;32mI (227383) deauther: 💥 [30/60 sec] Total: 193060 pkt | PPS: 6435 | Cycles: 9653 | Remaining: 30 sec[0m
+[0;32mI (227383) deauther:    📻 2.4GHz:  96530 pkt (3218 pps)[0m
+[0;32mI (227383) deauther:    📻 5GHz:    96530 pkt (3218 pps)[0m
+[0;32mI (227393) deauther: [0m
+[1;31mE (228093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (228093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (228093) task_wdt: Tasks currently running:[0m
+[1;31mE (228093) task_wdt: CPU 0: wifi[0m
+[1;31mE (228093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4205f720  RA      : 0x42046752  SP      : 0x408229c0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x4002d624  T1      : 0xffffffe0  T2      : 0x002c002c  
+S0/FP   : 0x40829ad4  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000000  
+A2      : 0x00000001  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x40823d78  
+A6      : 0x00000020  A7      : 0x04120f00  S2      : 0x00000000  S3      : 0x00000001  
+S4      : 0x00000003  S5      : 0x00000001  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x002c002c  T5      : 0x086c0c00  T6      : 0x0000d2f0  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (229383) deauther: 💥 [32/60 sec] Total: 205840 pkt | PPS: 6432 | Cycles: 10292 | Remaining: 28 sec[0m
+[0;32mI (229383) deauther:    📻 2.4GHz: 102920 pkt (3216 pps)[0m
+[0;32mI (229383) deauther:    📻 5GHz:   102920 pkt (3216 pps)[0m
+[0;32mI (229393) deauther: [0m
+[0;32mI (231383) deauther: 💥 [34/60 sec] Total: 219220 pkt | PPS: 6448 | Cycles: 10961 | Remaining: 26 sec[0m
+[0;32mI (231383) deauther:    📻 2.4GHz: 109610 pkt (3224 pps)[0m
+[0;32mI (231383) deauther:    📻 5GHz:   109610 pkt (3224 pps)[0m
+[0;32mI (231393) deauther: [0m
+[1;31mE (233093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (233093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (233093) task_wdt: Tasks currently running:[0m
+[1;31mE (233093) task_wdt: CPU 0: wifi[0m
+[1;31mE (233093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x408097e2  RA      : 0x40809878  SP      : 0x40822910  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x40805674  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x000014a0  A0      : 0x0000001f  A1      : 0x05db0063  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x00000000  A5      : 0x4081c000  
+A6      : 0x00000010  A7      : 0x80000000  S2      : 0x40822958  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x000014a0  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01b80000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (233383) deauther: 💥 [36/60 sec] Total: 231960 pkt | PPS: 6443 | Cycles: 11598 | Remaining: 24 sec[0m
+[0;32mI (233383) deauther:    📻 2.4GHz: 115980 pkt (3222 pps)[0m
+[0;32mI (233383) deauther:    📻 5GHz:   115980 pkt (3222 pps)[0m
+[0;32mI (233393) deauther: [0m
+[0;32mI (235383) deauther: 💥 [38/60 sec] Total: 245300 pkt | PPS: 6455 | Cycles: 12265 | Remaining: 22 sec[0m
+[0;32mI (235383) deauther:    📻 2.4GHz: 122650 pkt (3228 pps)[0m
+[0;32mI (235383) deauther:    📻 5GHz:   122650 pkt (3228 pps)[0m
+[0;32mI (235393) deauther: [0m
+[0;32mI (237383) deauther: 💥 [40/60 sec] Total: 258720 pkt | PPS: 6468 | Cycles: 12936 | Remaining: 20 sec[0m
+[0;32mI (237383) deauther:    📻 2.4GHz: 129360 pkt (3234 pps)[0m
+[0;32mI (237383) deauther:    📻 5GHz:   129360 pkt (3234 pps)[0m
+[0;32mI (237393) deauther: [0m
+[1;31mE (238093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (238093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (238093) task_wdt: Tasks currently running:[0m
+[1;31mE (238093) task_wdt: CPU 0: wifi[0m
+[1;31mE (238093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfbc  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x0000099e  A0      : 0x00011940  A1      : 0x05300068  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x4e188869  A5      : 0x0000f27c  
+A6      : 0x00000010  A7      : 0x00000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01cda000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (239383) deauther: 💥 [42/60 sec] Total: 271420 pkt | PPS: 6462 | Cycles: 13571 | Remaining: 18 sec[0m
+[0;32mI (239383) deauther:    📻 2.4GHz: 135710 pkt (3231 pps)[0m
+[0;32mI (239383) deauther:    📻 5GHz:   135710 pkt (3231 pps)[0m
+[0;32mI (239393) deauther: [0m
+[0;32mI (241383) deauther: 💥 [44/60 sec] Total: 284760 pkt | PPS: 6472 | Cycles: 14238 | Remaining: 16 sec[0m
+[0;32mI (241383) deauther:    📻 2.4GHz: 142380 pkt (3236 pps)[0m
+[0;32mI (241383) deauther:    📻 5GHz:   142380 pkt (3236 pps)[0m
+[0;32mI (241393) deauther: [0m
+[1;31mE (243093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (243093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (243093) task_wdt: Tasks currently running:[0m
+[1;31mE (243093) task_wdt: CPU 0: wifi[0m
+[1;31mE (243093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc0  RA      : 0x40009850  SP      : 0x408229e0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x40038640  T1      : 0x40802260  T2      : 0x002c002c  
+S0/FP   : 0x40860000  S1      : 0x0000099e  A0      : 0x000004b0  A1      : 0x00000000  
+A2      : 0x00000005  A3      : 0x600a5000  A4      : 0x95a006d5  A5      : 0x95a006e9  
+A6      : 0x0000000b  A7      : 0x00000002  S2      : 0x40860000  S3      : 0x00000000  
+S4      : 0x40860000  S5      : 0x00000001  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x002c002c  T5      : 0x086c0c00  T6      : 0x0000d2f0  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (243383) deauther: 💥 [46/60 sec] Total: 297520 pkt | PPS: 6468 | Cycles: 14876 | Remaining: 14 sec[0m
+[0;32mI (243383) deauther:    📻 2.4GHz: 148760 pkt (3234 pps)[0m
+[0;32mI (243383) deauther:    📻 5GHz:   148760 pkt (3234 pps)[0m
+[0;32mI (243393) deauther: [0m
+[0;32mI (245383) deauther: 💥 [48/60 sec] Total: 310840 pkt | PPS: 6476 | Cycles: 15542 | Remaining: 12 sec[0m
+[0;32mI (245383) deauther:    📻 2.4GHz: 155420 pkt (3238 pps)[0m
+[0;32mI (245383) deauther:    📻 5GHz:   155420 pkt (3238 pps)[0m
+[0;32mI (245393) deauther: [0m
+[0;32mI (247383) deauther: 💥 [50/60 sec] Total: 324320 pkt | PPS: 6486 | Cycles: 16216 | Remaining: 10 sec[0m
+[0;32mI (247383) deauther:    📻 2.4GHz: 162160 pkt (3243 pps)[0m
+[0;32mI (247383) deauther:    📻 5GHz:   162160 pkt (3243 pps)[0m
+[0;32mI (247393) deauther: [0m
+[1;31mE (248093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (248093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (248093) task_wdt: Tasks currently running:[0m
+[1;31mE (248093) task_wdt: CPU 0: wifi[0m
+[1;31mE (248093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40038590  RA      : 0x4209d542  SP      : 0x408226b0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00100000  T1      : 0x00000081  T2      : 0x00000039  
+S0/FP   : 0x00000018  S1      : 0x40816d58  A0      : 0x408226cc  A1      : 0x40816d78  
+A2      : 0x007d007c  A3      : 0x408226dc  A4      : 0x408226de  A5      : 0x408226d8  
+A6      : 0x00000010  A7      : 0x001f4000  S2      : 0x40822830  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00018073  S6      : 0x00000000  S7      : 0x00000001  
+S8      : 0x00000001  S9      : 0x00000000  S10     : 0x00000001  S11     : 0x40814e44  
+T3      : 0x00000001  T4      : 0x000e0000  T5      : 0x3d5f4000  T6      : 0x00000058  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (249383) deauther: 💥 [52/60 sec] Total: 337140 pkt | PPS: 6483 | Cycles: 16857 | Remaining:  8 sec[0m
+[0;32mI (249383) deauther:    📻 2.4GHz: 168570 pkt (3242 pps)[0m
+[0;32mI (249383) deauther:    📻 5GHz:   168570 pkt (3242 pps)[0m
+[0;32mI (249393) deauther: [0m
+[0;32mI (251383) deauther: 💥 [54/60 sec] Total: 350640 pkt | PPS: 6493 | Cycles: 17532 | Remaining:  6 sec[0m
+[0;32mI (251383) deauther:    📻 2.4GHz: 175320 pkt (3247 pps)[0m
+[0;32mI (251383) deauther:    📻 5GHz:   175320 pkt (3247 pps)[0m
+[0;32mI (251393) deauther: [0m
+[1;31mE (253093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (253093) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (253093) task_wdt: Tasks currently running:[0m
+[1;31mE (253093) task_wdt: CPU 0: wifi[0m
+[1;31mE (253093) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4209eee0  RA      : 0x4209ef76  SP      : 0x40822930  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x408056fe  T2      : 0x00000200  
+S0/FP   : 0x000014a0  S1      : 0x000014a0  A0      : 0x000014a0  A1      : 0x053c0763  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x00000bb7  A5      : 0x0000157b  
+A6      : 0x00000010  A7      : 0x80000000  S2      : 0x40822958  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x000014a0  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01b80000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (253383) deauther: 💥 [56/60 sec] Total: 363400 pkt | PPS: 6489 | Cycles: 18170 | Remaining:  4 sec[0m
+[0;32mI (253383) deauther:    📻 2.4GHz: 181700 pkt (3245 pps)[0m
+[0;32mI (253383) deauther:    📻 5GHz:   181700 pkt (3245 pps)[0m
+[0;32mI (253393) deauther: [0m
+[0;32mI (255383) deauther: 💥 [58/60 sec] Total: 376900 pkt | PPS: 6498 | Cycles: 18845 | Remaining:  2 sec[0m
+[0;32mI (255383) deauther:    📻 2.4GHz: 188450 pkt (3249 pps)[0m
+[0;32mI (255383) deauther:    📻 5GHz:   188450 pkt (3249 pps)[0m
+[0;32mI (255393) deauther: [0m
+[0;32mI (257383) deauther: ⏰ Attack duration expired![0m
+[0;32mI (257383) deauther: [0m
+[0;32mI (257383) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (257383) deauther: ║      DUAL-BAND ATTACK COMPLETED       ║[0m
+[0;32mI (257393) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (257403) deauther: 📊 STATISTICS:[0m
+[0;32mI (257413) deauther:    Total packets: 390180[0m
+[0;32mI (257413) deauther:    Total time: 60 seconds[0m
+[0;32mI (257413) deauther:    Average PPS: 6503 packets/sec[0m
+[0;32mI (257423) deauther:    Band switches: 19509 cycles (325.1/sec)[0m
+[0;32mI (257433) deauther: [0m
+[0;32mI (257433) deauther: 📻 2.4GHz: 195090 packets (3252 pps)[0m
+[0;32mI (257433) deauther: 📻 5GHz:   195090 packets (3252 pps)[0m
+[0;32mI (257443) deauther: [0m
+[0;32mI (257443) deauther: 💪 Effectiveness: EXCELLENT[0m
+[0;32mI (257443) deauther: [0m
+[0;32mI (257453) deauther: 🔄 Restoring AP mode...[0m
+[0;32mI (257453) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (257463) wifi:Total power save buffer number: 16[0m
+[0;32mI (257463) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (257473) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (257483) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (257493) wifi:Total power save buffer number: 16[0m
+[0;32mI (257493) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (257493) deauther: ✅ Web interface restored at http://192.168.4.1/[0m
+[0;32mI (257503) deauther: ✅ Ready for next attack. Reconnect to ESP32-Deauther WiFi.[0m
+[0;32mI (263233) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (263243) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:144, highestRateIdx:0[0m
+[0;33mW (263243) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (263253) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (263263) wifi:ifidx:1, rssi:-38, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (263273) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (263273) wifi:station: 8e:74:ff:46:65:f7 join, AID=1, bgn, 20[0m
+[0;32mI (263453) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (263533) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:4, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (263533) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (263623) wifi:conn=0x4082bed4 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (263623) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101f765, TALO:0x46ff748e, (ssn:17, win:64), CONF:0xc0000001[0m
+[0;32mI (333993) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (333993) wifi:(trc)phytype:HT40-SGI, snr:56, maxRate:144, highestRateIdx:0[0m
+[0;33mW (333993) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (334003) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (334013) wifi:ifidx:1, rssi:-38, nf:-94, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (334023) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (334033) wifi:station: 90:de:80:97:ac:ce join, AID=2, bgn, 40U[0m
+[0;32mI (334083) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:5, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (334083) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (336443) wifi:conn=0x4082bed4 alloc softap rx ba index=1 ba index 8[0m
+[0;32mI (336443) wifi:<ba-add>extra, idx:1, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:68, win:64), CONF:0xc0000021[0m
+[0;32mI (339183) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.6[0m
+[0;32mI (371803) wifi:station: 8e:74:ff:46:65:f7 leave, AID = 1, reason = 3, bss_flags is 691315, bss:0x4082b424[0m
+[0;32mI (371803) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (371813) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (385783) deauther: 🔍 Starting WiFi scan (2.4GHz + 5GHz)...[0m
+[0;32mI (393983) deauther: ✅ Found 25 networks[0m
+[0;32mI (420893) deauther: [0m
+[0;32mI (420893) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (420893) deauther: ║   DUAL-BAND DEAUTH ATTACK STARTED     ║[0m
+[0;32mI (420903) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (420913) deauther: 📡 2.4GHz Target: GDR[0m
+[0;32mI (420923) deauther:    BSSID: 54:76:B2:A3:38:FD | CH: 11[0m
+[0;32mI (420923) deauther: 📡 5GHz Target: GDR-5G[0m
+[0;32mI (420933) deauther:    BSSID: 54:76:B2:A3:38:FE | CH: 56[0m
+[0;32mI (420933) deauther: ⏱️  Duration: 60 seconds[0m
+[0;32mI (420943) deauther: 🔥 Mode: DUAL-BAND RAPID SWITCHING[0m
+[0;32mI (420943) deauther: [0m
+[0;32mI (420943) deauther: 🔌 Switching to STA mode (AP disabled)...[0m
+[0;32mI (420953) wifi:station: 90:de:80:97:ac:ce leave, AID = 2, reason = 2, bss_flags is 756835, bss:0x4082f188[0m
+[0;32mI (420963) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (420973) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (420973) wifi:mode : sta (3c:dc:75:80:f1:b0)[0m
+[0;33mW (420983) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (420983) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (421483) deauther: 💥 DUAL ATTACK STARTED - RAPID BAND SWITCHING![0m
+[0;32mI (421483) deauther: [0m
+[0;32mI (423383) deauther: 💥 [ 2/60 sec] Total:  13060 pkt | PPS: 6530 | Cycles: 653 | Remaining: 58 sec[0m
+[0;32mI (423383) deauther:    📻 2.4GHz:   6530 pkt (3265 pps)[0m
+[0;32mI (423383) deauther:    📻 5GHz:     6530 pkt (3265 pps)[0m
+[0;32mI (423393) deauther: [0m
+[0;32mI (425383) deauther: 💥 [ 4/60 sec] Total:  26560 pkt | PPS: 6640 | Cycles: 1328 | Remaining: 56 sec[0m
+[0;32mI (425383) deauther:    📻 2.4GHz:  13280 pkt (3320 pps)[0m
+[0;32mI (425383) deauther:    📻 5GHz:    13280 pkt (3320 pps)[0m
+[0;32mI (425393) deauther: [0m
+[1;31mE (426463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (426463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (426463) task_wdt: Tasks currently running:[0m
+[1;31mE (426463) task_wdt: CPU 0: wifi[0m
+[1;31mE (426463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4209b5ee  RA      : 0x4209b706  SP      : 0x408226f0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00100000  T1      : 0x00000081  T2      : 0x0000002c  
+S0/FP   : 0x00000007  S1      : 0x00000000  A0      : 0xbe1efc68  A1      : 0x3d070281  
+A2      : 0xfff00000  A3      : 0x00083000  A4      : 0x00000000  A5      : 0x00000050  
+A6      : 0x00010200  A7      : 0x001ee000  S2      : 0x40822834  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00040035  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x40814e44  
+T3      : 0x00000000  T4      : 0x00060000  T5      : 0xbe1ee000  T6      : 0x0000004f  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (427383) deauther: 💥 [ 6/60 sec] Total:  39340 pkt | PPS: 6557 | Cycles: 1967 | Remaining: 54 sec[0m
+[0;32mI (427383) deauther:    📻 2.4GHz:  19670 pkt (3278 pps)[0m
+[0;32mI (427383) deauther:    📻 5GHz:    19670 pkt (3278 pps)[0m
+[0;32mI (427393) deauther: [0m
+[0;32mI (429383) deauther: 💥 [ 8/60 sec] Total:  52720 pkt | PPS: 6590 | Cycles: 2636 | Remaining: 52 sec[0m
+[0;32mI (429383) deauther:    📻 2.4GHz:  26360 pkt (3295 pps)[0m
+[0;32mI (429383) deauther:    📻 5GHz:    26360 pkt (3295 pps)[0m
+[0;32mI (429393) deauther: [0m
+[0;32mI (431383) deauther: 💥 [10/60 sec] Total:  66260 pkt | PPS: 6626 | Cycles: 3313 | Remaining: 50 sec[0m
+[0;32mI (431383) deauther:    📻 2.4GHz:  33130 pkt (3313 pps)[0m
+[0;32mI (431383) deauther:    📻 5GHz:    33130 pkt (3313 pps)[0m
+[0;32mI (431393) deauther: [0m
+[1;31mE (431463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (431463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (431463) task_wdt: Tasks currently running:[0m
+[1;31mE (431463) task_wdt: CPU 0: wifi[0m
+[1;31mE (431463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc0  RA      : 0x4209b3ae  SP      : 0x40822980  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00100000  T1      : 0x40805250  T2      : 0x00000039  
+S0/FP   : 0x000001f4  S1      : 0x00000004  A0      : 0x00000960  A1      : 0x00000000  
+A2      : 0x004058de  A3      : 0xff7fffff  A4      : 0x1c478916  A5      : 0x1c4791e8  
+A6      : 0x00800000  A7      : 0x001f8000  S2      : 0x000014a0  S3      : 0x000ffe00  
+S4      : 0xfff001ff  S5      : 0x600a1000  S6      : 0x00000004  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x00fe0000  T5      : 0xb59f8000  T6      : 0x00000058  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (433383) deauther: 💥 [12/60 sec] Total:  79020 pkt | PPS: 6585 | Cycles: 3951 | Remaining: 48 sec[0m
+[0;32mI (433383) deauther:    📻 2.4GHz:  39510 pkt (3292 pps)[0m
+[0;32mI (433383) deauther:    📻 5GHz:    39510 pkt (3292 pps)[0m
+[0;32mI (433393) deauther: [0m
+[0;32mI (435383) deauther: 💥 [14/60 sec] Total:  92580 pkt | PPS: 6613 | Cycles: 4629 | Remaining: 46 sec[0m
+[0;32mI (435383) deauther:    📻 2.4GHz:  46290 pkt (3306 pps)[0m
+[0;32mI (435383) deauther:    📻 5GHz:    46290 pkt (3306 pps)[0m
+[0;32mI (435393) deauther: [0m
+[1;31mE (436463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (436463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (436463) task_wdt: Tasks currently running:[0m
+[1;31mE (436463) task_wdt: CPU 0: wifi[0m
+[1;31mE (436463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc0  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x0000099e  A0      : 0x00011940  A1      : 0x05300068  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x63cdbcc2  A5      : 0x63ce1de8  
+A6      : 0x00000010  A7      : 0x00000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01cda000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (437383) deauther: 💥 [16/60 sec] Total: 105340 pkt | PPS: 6584 | Cycles: 5267 | Remaining: 44 sec[0m
+[0;32mI (437383) deauther:    📻 2.4GHz:  52670 pkt (3292 pps)[0m
+[0;32mI (437383) deauther:    📻 5GHz:    52670 pkt (3292 pps)[0m
+[0;32mI (437393) deauther: [0m
+[0;32mI (439383) deauther: 💥 [18/60 sec] Total: 118920 pkt | PPS: 6607 | Cycles: 5946 | Remaining: 42 sec[0m
+[0;32mI (439383) deauther:    📻 2.4GHz:  59460 pkt (3303 pps)[0m
+[0;32mI (439383) deauther:    📻 5GHz:    59460 pkt (3303 pps)[0m
+[0;32mI (439393) deauther: [0m
+[0;32mI (441383) deauther: 💥 [20/60 sec] Total: 132500 pkt | PPS: 6625 | Cycles: 6625 | Remaining: 40 sec[0m
+[0;32mI (441383) deauther:    📻 2.4GHz:  66250 pkt (3312 pps)[0m
+[0;32mI (441383) deauther:    📻 5GHz:    66250 pkt (3312 pps)[0m
+[0;32mI (441393) deauther: [0m
+[1;31mE (441463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (441463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (441463) task_wdt: Tasks currently running:[0m
+[1;31mE (441463) task_wdt: CPU 0: wifi[0m
+[1;31mE (441463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x42098fba  RA      : 0x4209946a  SP      : 0x40822810  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x008401ff  T1      : 0x0000000c  T2      : 0x00000000  
+S0/FP   : 0x600a0854  S1      : 0x600a0858  A0      : 0x00000001  A1      : 0x000000ff  
+A2      : 0x408228c0  A3      : 0x40822884  A4      : 0x408228e8  A5      : 0x4082289c  
+A6      : 0x4082286c  A7      : 0x40822874  S2      : 0x0000ffff  S3      : 0x00000000  
+S4      : 0x600a085c  S5      : 0x00000008  S6      : 0x600a0868  S7      : 0x600a0864  
+S8      : 0x600a0860  S9      : 0x600a0880  S10     : 0x00f40000  S11     : 0x00f20000  
+T3      : 0x408228c0  T4      : 0x00a801ff  T5      : 0x600a1000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (443383) deauther: 💥 [22/60 sec] Total: 145340 pkt | PPS: 6606 | Cycles: 7267 | Remaining: 38 sec[0m
+[0;32mI (443383) deauther:    📻 2.4GHz:  72670 pkt (3303 pps)[0m
+[0;32mI (443383) deauther:    📻 5GHz:    72670 pkt (3303 pps)[0m
+[0;32mI (443393) deauther: [0m
+[0;32mI (445383) deauther: 💥 [24/60 sec] Total: 158880 pkt | PPS: 6620 | Cycles: 7944 | Remaining: 36 sec[0m
+[0;32mI (445383) deauther:    📻 2.4GHz:  79440 pkt (3310 pps)[0m
+[0;32mI (445383) deauther:    📻 5GHz:    79440 pkt (3310 pps)[0m
+[0;32mI (445393) deauther: [0m
+[1;31mE (446463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (446463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (446463) task_wdt: Tasks currently running:[0m
+[1;31mE (446463) task_wdt: CPU 0: wifi[0m
+[1;31mE (446463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfbc  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x0000099e  A0      : 0x00011940  A1      : 0x05300068  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0xf2da43ed  A5      : 0x0000f1f8  
+A6      : 0x00000010  A7      : 0x00000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01cda000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (447383) deauther: 💥 [26/60 sec] Total: 171620 pkt | PPS: 6601 | Cycles: 8581 | Remaining: 34 sec[0m
+[0;32mI (447383) deauther:    📻 2.4GHz:  85810 pkt (3300 pps)[0m
+[0;32mI (447383) deauther:    📻 5GHz:    85810 pkt (3300 pps)[0m
+[0;32mI (447393) deauther: [0m
+[0;32mI (449383) deauther: 💥 [28/60 sec] Total: 185060 pkt | PPS: 6609 | Cycles: 9253 | Remaining: 32 sec[0m
+[0;32mI (449383) deauther:    📻 2.4GHz:  92530 pkt (3305 pps)[0m
+[0;32mI (449383) deauther:    📻 5GHz:    92530 pkt (3305 pps)[0m
+[0;32mI (449393) deauther: [0m
+[0;32mI (451383) deauther: 💥 [30/60 sec] Total: 198460 pkt | PPS: 6615 | Cycles: 9923 | Remaining: 30 sec[0m
+[0;32mI (451383) deauther:    📻 2.4GHz:  99230 pkt (3308 pps)[0m
+[0;32mI (451383) deauther:    📻 5GHz:    99230 pkt (3308 pps)[0m
+[0;32mI (451393) deauther: [0m
+[1;31mE (451463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (451463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (451463) task_wdt: Tasks currently running:[0m
+[1;31mE (451463) task_wdt: CPU 0: wifi[0m
+[1;31mE (451463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4209c830  RA      : 0x4209aa08  SP      : 0x408229a0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x00000000  T2      : 0x00000200  
+S0/FP   : 0x40815000  S1      : 0x40814e44  A0      : 0x00100000  A1      : 0x05230466  
+A2      : 0x05000000  A3      : 0x600a0000  A4      : 0xffc3ffff  A5      : 0x0003ffff  
+A6      : 0x40200000  A7      : 0x00000000  S2      : 0x0000099e  S3      : 0x000014a0  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x7fffffff  T4      : 0x3c000000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (453383) deauther: 💥 [32/60 sec] Total: 211280 pkt | PPS: 6602 | Cycles: 10564 | Remaining: 28 sec[0m
+[0;32mI (453383) deauther:    📻 2.4GHz: 105640 pkt (3301 pps)[0m
+[0;32mI (453383) deauther:    📻 5GHz:   105640 pkt (3301 pps)[0m
+[0;32mI (453393) deauther: [0m
+[0;32mI (455383) deauther: 💥 [34/60 sec] Total: 224900 pkt | PPS: 6615 | Cycles: 11245 | Remaining: 26 sec[0m
+[0;32mI (455383) deauther:    📻 2.4GHz: 112450 pkt (3307 pps)[0m
+[0;32mI (455383) deauther:    📻 5GHz:   112450 pkt (3307 pps)[0m
+[0;32mI (455393) deauther: [0m
+[1;31mE (456463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (456463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (456463) task_wdt: Tasks currently running:[0m
+[1;31mE (456463) task_wdt: CPU 0: wifi[0m
+[1;31mE (456463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x408097e2  RA      : 0x40809878  SP      : 0x40822900  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x40805674  T2      : 0x00000200  
+S0/FP   : 0x00000000  S1      : 0x0000099e  A0      : 0x0000001f  A1      : 0x05901363  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x00000000  A5      : 0x4081c000  
+A6      : 0x00000010  A7      : 0x00000000  S2      : 0x40822958  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01cda000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (457383) deauther: 💥 [36/60 sec] Total: 237940 pkt | PPS: 6609 | Cycles: 11897 | Remaining: 24 sec[0m
+[0;32mI (457383) deauther:    📻 2.4GHz: 118970 pkt (3305 pps)[0m
+[0;32mI (457383) deauther:    📻 5GHz:   118970 pkt (3305 pps)[0m
+[0;32mI (457393) deauther: [0m
+[0;32mI (459383) deauther: 💥 [38/60 sec] Total: 251500 pkt | PPS: 6618 | Cycles: 12575 | Remaining: 22 sec[0m
+[0;32mI (459383) deauther:    📻 2.4GHz: 125750 pkt (3309 pps)[0m
+[0;32mI (459383) deauther:    📻 5GHz:   125750 pkt (3309 pps)[0m
+[0;32mI (459393) deauther: [0m
+[0;32mI (461383) deauther: 💥 [40/60 sec] Total: 265040 pkt | PPS: 6626 | Cycles: 13252 | Remaining: 20 sec[0m
+[0;32mI (461383) deauther:    📻 2.4GHz: 132520 pkt (3313 pps)[0m
+[0;32mI (461383) deauther:    📻 5GHz:   132520 pkt (3313 pps)[0m
+[0;32mI (461393) deauther: [0m
+[1;31mE (461463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (461463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (461463) task_wdt: Tasks currently running:[0m
+[1;31mE (461463) task_wdt: CPU 0: wifi[0m
+[1;31mE (461463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4001bfc0  RA      : 0x4209a824  SP      : 0x40822950  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x400007fa  T2      : 0x00000200  
+S0/FP   : 0x40814e44  S1      : 0x000014a0  A0      : 0x00011940  A1      : 0x05921363  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0xc96e7e9c  A5      : 0xc96ed9ea  
+A6      : 0x00000010  A7      : 0x80000000  S2      : 0x00001000  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x000014a0  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01b80000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (463383) deauther: 💥 [42/60 sec] Total: 277980 pkt | PPS: 6619 | Cycles: 13899 | Remaining: 18 sec[0m
+[0;32mI (463383) deauther:    📻 2.4GHz: 138990 pkt (3309 pps)[0m
+[0;32mI (463383) deauther:    📻 5GHz:   138990 pkt (3309 pps)[0m
+[0;32mI (463393) deauther: [0m
+[0;32mI (465383) deauther: 💥 [44/60 sec] Total: 291760 pkt | PPS: 6631 | Cycles: 14588 | Remaining: 16 sec[0m
+[0;32mI (465383) deauther:    📻 2.4GHz: 145880 pkt (3315 pps)[0m
+[0;32mI (465383) deauther:    📻 5GHz:   145880 pkt (3315 pps)[0m
+[0;32mI (465393) deauther: [0m
+[1;31mE (466463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (466463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (466463) task_wdt: Tasks currently running:[0m
+[1;31mE (466463) task_wdt: CPU 0: wifi[0m
+[1;31mE (466463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4209bede  RA      : 0x4209c322  SP      : 0x40822930  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x0000000e  T1      : 0x40814e44  T2      : 0x00000001  
+S0/FP   : 0x4082299c  S1      : 0x40815000  A0      : 0x000014a0  A1      : 0x50505050  
+A2      : 0x40814e96  A3      : 0x40814e76  A4      : 0x00000000  A5      : 0x00000050  
+A6      : 0x40814e8d  A7      : 0x40815160  S2      : 0x00000064  S3      : 0x00000000  
+S4      : 0x40860000  S5      : 0x00000001  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000014  T4      : 0x00000050  T5      : 0x00000003  T6      : 0x00000008  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (467383) deauther: 💥 [46/60 sec] Total: 304800 pkt | PPS: 6626 | Cycles: 15240 | Remaining: 14 sec[0m
+[0;32mI (467383) deauther:    📻 2.4GHz: 152400 pkt (3313 pps)[0m
+[0;32mI (467383) deauther:    📻 5GHz:   152400 pkt (3313 pps)[0m
+[0;32mI (467393) deauther: [0m
+[0;32mI (469383) deauther: 💥 [48/60 sec] Total: 318440 pkt | PPS: 6634 | Cycles: 15922 | Remaining: 12 sec[0m
+[0;32mI (469383) deauther:    📻 2.4GHz: 159220 pkt (3317 pps)[0m
+[0;32mI (469383) deauther:    📻 5GHz:   159220 pkt (3317 pps)[0m
+[0;32mI (469393) deauther: [0m
+[0;32mI (471383) deauther: 💥 [50/60 sec] Total: 332020 pkt | PPS: 6640 | Cycles: 16601 | Remaining: 10 sec[0m
+[0;32mI (471383) deauther:    📻 2.4GHz: 166010 pkt (3320 pps)[0m
+[0;32mI (471383) deauther:    📻 5GHz:   166010 pkt (3320 pps)[0m
+[0;32mI (471393) deauther: [0m
+[1;31mE (471463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (471463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (471463) task_wdt: Tasks currently running:[0m
+[1;31mE (471463) task_wdt: CPU 0: wifi[0m
+[1;31mE (471463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x408097e2  RA      : 0x40809878  SP      : 0x40822930  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00000001  T1      : 0x4209c634  T2      : 0x00000200  
+S0/FP   : 0x0000099e  S1      : 0x40814e44  A0      : 0x0000001f  A1      : 0x05700068  
+A2      : 0x05000000  A3      : 0x600b0000  A4      : 0x00000000  A5      : 0x4081c000  
+A6      : 0x8007ffff  A7      : 0x00000852  S2      : 0x000009b2  S3      : 0x00000003  
+S4      : 0x00000000  S5      : 0x0000099e  S6      : 0x40829ad4  S7      : 0xffffffff  
+S8      : 0x00000000  S9      : 0x40860000  S10     : 0x4085ff40  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x01cda000  T5      : 0x00000012  T6      : 0x00000002  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (473383) deauther: 💥 [52/60 sec] Total: 344920 pkt | PPS: 6633 | Cycles: 17246 | Remaining:  8 sec[0m
+[0;32mI (473383) deauther:    📻 2.4GHz: 172460 pkt (3317 pps)[0m
+[0;32mI (473383) deauther:    📻 5GHz:   172460 pkt (3317 pps)[0m
+[0;32mI (473393) deauther: [0m
+[0;32mI (475383) deauther: 💥 [54/60 sec] Total: 358420 pkt | PPS: 6637 | Cycles: 17921 | Remaining:  6 sec[0m
+[0;32mI (475383) deauther:    📻 2.4GHz: 179210 pkt (3319 pps)[0m
+[0;32mI (475383) deauther:    📻 5GHz:   179210 pkt (3319 pps)[0m
+[0;32mI (475393) deauther: [0m
+[1;31mE (476463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (476463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (476463) task_wdt: Tasks currently running:[0m
+[1;31mE (476463) task_wdt: CPU 0: wifi[0m
+[1;31mE (476463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x42099038  RA      : 0x42099232  SP      : 0x40822830  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x00100000  T1      : 0x00000001  T2      : 0x0000001d  
+S0/FP   : 0x600a0854  S1      : 0x600a0858  A0      : 0x00000000  A1      : 0x0000000d  
+A2      : 0x408228f8  A3      : 0x408228b0  A4      : 0x40822930  A5      : 0x408228d0  
+A6      : 0x40822898  A7      : 0x40822888  S2      : 0x0000ffff  S3      : 0x00000060  
+S4      : 0x600a085c  S5      : 0x00000008  S6      : 0x600a0868  S7      : 0x600a0864  
+S8      : 0x600a0860  S9      : 0x600a0880  S10     : 0x0000002a  S11     : 0x3837362a  
+T3      : 0x40822930  T4      : 0x0000001e  T5      : 0x600a1000  T6      : 0x00000006  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (477383) deauther: 💥 [56/60 sec] Total: 371280 pkt | PPS: 6630 | Cycles: 18564 | Remaining:  4 sec[0m
+[0;32mI (477383) deauther:    📻 2.4GHz: 185640 pkt (3315 pps)[0m
+[0;32mI (477383) deauther:    📻 5GHz:   185640 pkt (3315 pps)[0m
+[0;32mI (477393) deauther: [0m
+[0;32mI (479383) deauther: 💥 [58/60 sec] Total: 384680 pkt | PPS: 6632 | Cycles: 19234 | Remaining:  2 sec[0m
+[0;32mI (479383) deauther:    📻 2.4GHz: 192340 pkt (3316 pps)[0m
+[0;32mI (479383) deauther:    📻 5GHz:   192340 pkt (3316 pps)[0m
+[0;32mI (479393) deauther: [0m
+[0;32mI (481373) deauther: ⏰ Attack duration expired![0m
+[0;32mI (481383) deauther: [0m
+[0;32mI (481383) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (481383) deauther: ║      DUAL-BAND ATTACK COMPLETED       ║[0m
+[0;32mI (481393) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (481403) deauther: 📊 STATISTICS:[0m
+[0;32mI (481413) deauther:    Total packets: 398180[0m
+[0;32mI (481413) deauther:    Total time: 60 seconds[0m
+[0;32mI (481413) deauther:    Average PPS: 6636 packets/sec[0m
+[0;32mI (481423) deauther:    Band switches: 19909 cycles (331.8/sec)[0m
+[0;32mI (481423) deauther: [0m
+[0;32mI (481433) deauther: 📻 2.4GHz: 199090 packets (3318 pps)[0m
+[0;32mI (481433) deauther: 📻 5GHz:   199090 packets (3318 pps)[0m
+[0;32mI (481443) deauther: [0m
+[0;32mI (481443) deauther: 💪 Effectiveness: EXCELLENT[0m
+[0;32mI (481443) deauther: [0m
+[0;32mI (481453) deauther: 🔄 Restoring AP mode...[0m
+[0;32mI (481453) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (481463) wifi:Total power save buffer number: 16[0m
+[0;32mI (481463) wifi:Init max length of beacon: 752/752E (481463) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (481463) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (481463) task_wdt: Tasks currently running:[0m
+[1;31mE (481463) task_wdt: CPU 0: wifi[0m
+[1;31mE (481463) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4200752e  RA      : 0x4200870e  SP      : 0x408222f0  GP      : 0x40813c04  
+TP      : 0x40822ae0  T0      : 0x4002685e  T1      : 0x4082251c  T2      : 0x00000004  
+S0/FP   : 0x00000032  S1      : 0x0000000a  A0      : 0x00000000  A1      : 0x0000000d  
+A2      : 0x00000000  A3      : 0x00000080  A4      : 0x60000000  A5      : 0xe07f8000  
+A6      : 0x42008680  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000033  
+S4      : 0x4081e5b4  S5      : 0x42007502  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000001  S9      : 0x00000001  S10     : 0x00000000  S11     : 0x40822524  
+T3      : 0x00000000  T4      : 0x4f5e13a3  T5      : 0x3b392192  T6      : 0x7d71886c  
+MSTATUS : 0x00001889  MTVEC   : 0x40800003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+[0;32mI (481573) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (481593) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (481593) wifi:Total power save buffer number: 16[0m
+[0;32mI (481603) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (481603) deauther: ✅ Web interface restored at http://192.168.4.1/[0m
+[0;32mI (481603) deauther: ✅ Ready for next attack. Reconnect to ESP32-Deauther WiFi.[0m

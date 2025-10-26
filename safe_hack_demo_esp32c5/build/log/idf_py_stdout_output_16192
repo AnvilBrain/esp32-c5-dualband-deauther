@@ -1,0 +1,21 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\esp-idf\esptool_py && C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:/Users/user/Desktop/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/bootloader/bootloader.bin"
+Bootloader binary size 0x55b0 bytes. 0xa50 bytes (11%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable safe_hack_demo_esp32c5.elf
+[8/9] Generating binary image from built executable
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+esptool v5.1.0
+Creating ESP32C5 image...
+Merged 1 ELF section.
+Successfully created ESP32C5 image.
+Generated C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/safe_hack_demo_esp32c5.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\esp-idf\esptool_py && C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:/Users/user/Desktop/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/partition_table/partition-table.bin C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/safe_hack_demo_esp32c5.bin"
+safe_hack_demo_esp32c5.bin binary size 0xef9b0 bytes. Smallest app partition is 0x100000 bytes. 0x10650 bytes (6%) free.

@@ -1,0 +1,6 @@
+Command: C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:\Users\user\Desktop\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\safe_hack_demo_esp32c5.elf C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\bootloader.elf --force-color -m 'C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'C:\Users\user\Desktop\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m

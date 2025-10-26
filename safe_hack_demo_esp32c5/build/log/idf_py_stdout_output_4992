@@ -1,0 +1,461 @@
+Command: C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:\Users\user\Desktop\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\safe_hack_demo_esp32c5.elf C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\bootloader.elf --force-color -m 'C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'C:\Users\user\Desktop\esp-idf\tools\idf.py'
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x1 (POWERON),boot:0x58 (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:2
+load:0x408556b0,len:0x1744
+load:0x4084bba0,len:0xd94
+load:0x4084e5a0,len:0x3078
+entry 0x4084bbaa
+[0;32mI (23) boot: ESP-IDF v5.5-dev-3951-ga74725a31b-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 24 2025 01:39:23[0m
+[0;32mI (24) boot: chip revision: v1.0[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (29) boot.esp32c5: SPI Speed      : 40MHz[0m
+[0;32mI (33) boot.esp32c5: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c5: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (67) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=420c0020 size=217e4h (137188) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=0003180c vaddr=40800000 size=0e80ch ( 59404) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b618ch (745868) map[0m
+[0;32mI (285) esp_image: segment 3: paddr=000f61b4 vaddr=4080e80c size=04bf0h ( 19440) load[0m
+[0;32mI (290) esp_image: segment 4: paddr=000fadac vaddr=40813400 size=03cd8h ( 15576) load[0m
+[0;32mI (299) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (299) boot: Disabling RNG early entropy source...[0m
+[0;32mI (310) cpu_start: Unicore app[0m
+[0;33mW (319) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (325) cpu_start: Pro cpu start user code[0m
+[0;32mI (325) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (325) app_init: Application information:[0m
+[0;32mI (325) app_init: Project name:     safe_hack_demo_esp32c5[0m
+[0;32mI (330) app_init: App version:      1[0m
+[0;32mI (333) app_init: Compile time:     Oct 24 2025 01:39:03[0m
+[0;32mI (338) app_init: ELF file SHA256:  27c961752...[0m
+[0;32mI (343) app_init: ESP-IDF:          v5.5-dev-3951-ga74725a31b-dirty[0m
+[0;32mI (349) efuse_init: Min chip rev:     v1.0[0m
+[0;32mI (352) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (356) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (360) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (367) heap_init: At 4081CA40 len 0003FB60 (254 KiB): RAM[0m
+[0;32mI (372) heap_init: At 4085C5A0 len 00002F58 (11 KiB): RAM[0m
+[0;32mI (377) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (383) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (389) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (401) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (407) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (414) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (432) coexist: coexist rom version 78e5c6e42[0m
+[0;32mI (433) main_task: Started on CPU0[0m
+[0;32mI (433) main_task: Calling app_main()[0m
+[0;32mI (443) deauther: [0m
+[0;32mI (443) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (443) deauther: ║   ESP32-C5 WiFi Deauther v2.0         ║[0m
+[0;32mI (453) deauther: ║   Smart AP Auto-Restore Mode          ║[0m
+[0;32mI (453) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (473) deauther: [0m
+[0;32mI (473) pp: pp rom version: 78a72e9d5[0m
+[0;32mI (473) net80211: net80211 rom version: 78a72e9d5[0m
+[0;32mI (493) wifi:wifi driver task: 40822ac0, prio:23, stack:6656, core=0[0m
+[0;32mI (493) wifi:wifi firmware version: d88df9f[0m
+[0;32mI (493) wifi:wifi certification version: v7.0[0m
+[0;32mI (493) wifi:config NVS flash: enabled[0m
+[0;32mI (493) wifi:config nano formatting: disabled[0m
+[0;32mI (503) wifi:mac_version:HAL_MAC_ESP32AX_752MP_ECO2,ut_version:N, band mode:0x3[0m
+[0;32mI (513) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (513) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (513) wifi:Init management short buffer num: 32[0m
+[0;32mI (523) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (523) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (533) wifi:Init static rx buffer size: 1700 (rxctrl:64, csi:512)[0m
+[0;32mI (533) wifi:Init static rx buffer num: 10[0m
+[0;32mI (543) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (543) wifi_init: rx ba win: 6[0m
+[0;32mI (543) wifi_init: accept mbox: 6[0m
+[0;32mI (553) wifi_init: tcpip mbox: 32[0m
+[0;32mI (553) wifi_init: udp mbox: 6[0m
+[0;32mI (553) wifi_init: tcp mbox: 6[0m
+[0;32mI (553) wifi_init: tcp tx win: 5760[0m
+[0;32mI (563) wifi_init: tcp rx win: 5760[0m
+[0;32mI (563) wifi_init: tcp mss: 1440[0m
+[0;32mI (563) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (573) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (573) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (583) phy_init: phy_version 100,b0bde74c,Apr 27 2025,16:38:14[0m
+[0;33mW (1163) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (1163) wifi:WDEV_RXOFDM_DELAY:266[0m
+[0;33mW (1163) wifi:WDEV_RX_11G_OFDM_DELAY:267[0m
+[0;33mW (1163) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (1163) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (1163) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1173) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1183) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (1183) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (1193) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (1203) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (1213) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (1213) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1223) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1223) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1233) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1233) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1243) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1243) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (1253) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (1253) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (1263) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (1263) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (1273) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (1273) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (1283) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (1283) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (1293) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (1303) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (1313) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (1323) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1333) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1343) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1343) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1353) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (1363) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (1373) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (1383) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1383) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (1393) wifi:enable tsf[0m
+[0;33mW (1393) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (1403) wifi:11ax/11ac mode can not work under phy bw 40M, the sta 2G phymode changed to 11N[0m
+[0;33mW (1413) wifi:11ax/11ac mode can not work under phy bw 40M, the sta 5G phymode changed to 11N[0m
+[0;32mI (1423) wifi:Total power save buffer number: 16[0m
+[0;32mI (1423) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1423) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1433) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1443) deauther: [0m
+[0;32mI (1443) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (1453) deauther: ║   ESP32-C5 DEAUTHER - AP MODE         ║[0m
+[0;32mI (1463) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (1473) deauther: 📡 SSID: ESP32-Deauther[0m
+[0;32mI (1473) deauther: 🔑 Password: 12345678[0m
+[0;32mI (1483) deauther: 🌐 Web Interface: http://192.168.4.1/[0m
+[0;32mI (1483) deauther: ⚠️  USE ONLY ON YOUR OWN NETWORKS![0m
+[0;32mI (1493) deauther: [0m
+[0;32mI (1493) deauther: ✅ Web server started[0m
+[0;32mI (12333) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (12333) wifi:(trc)phytype:HT40-SGI, snr:54, maxRate:144, highestRateIdx:0[0m
+[0;33mW (12333) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (12343) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:54, ampduState:wait operational[0m
+[0;32mI (12353) wifi:ifidx:1, rssi:-37, nf:-91, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (12363) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (12373) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (13563) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (13633) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (13643) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (16623) wifi:conn=0x4082a2e0 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (16623) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:102, win:64), CONF:0xc0000001[0m
+[0;32mI (26763) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (26763) wifi:(trc)phytype:HT40-SGI, snr:53, maxRate:144, highestRateIdx:0[0m
+[0;33mW (26763) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (26773) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:53, ampduState:wait operational[0m
+[0;32mI (26783) wifi:ifidx:1, rssi:-37, nf:-90, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (26793) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (26803) wifi:station: 5a:6e:ab:06:e3:9d join, AID=2, bgn, 40U[0m
+[0;32mI (27373) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (28263) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (28273) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (28323) wifi:conn=0x4082a2e0 alloc softap rx ba index=1 ba index 8[0m
+[0;32mI (28323) wifi:<ba-add>extra, idx:1, ifx:1, tid:0, TAHI:0x1019de3, TALO:0x6ab6e5a, (ssn:16, win:64), CONF:0xc0000021[0m
+[0;33mW (40223) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (40223) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (42143) deauther: 🔍 Starting WiFi scan (2.4GHz + 5GHz)...[0m
+[0;32mI (50353) deauther: ✅ Found 19 networks[0m
+[0;32mI (59993) deauther: [0m
+[0;32mI (59993) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (59993) deauther: ║   AGGRESSIVE DEAUTH ATTACK STARTED    ║[0m
+[0;32mI (60003) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (60013) deauther: 📡 Target SSID: GDR-5G[0m
+[0;32mI (60013) deauther: 🎯 Target BSSID: 54:76:B2:A3:38:FE[0m
+[0;32mI (60023) deauther: 📻 Channel: 56[0m
+[0;32mI (60023) deauther: ⏱️  Duration: 90 seconds[0m
+[0;32mI (60033) deauther: 🔥 Mode: MAXIMUM AGGRESSION[0m
+[0;32mI (60033) deauther: [0m
+[0;32mI (60033) deauther: 🔌 Switching to STA mode (AP disabled)...[0m
+[0;32mI (60043) wifi:station: 90:de:80:97:ac:ce leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x4082dd60[0m
+[0;32mI (60053) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (60063) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (60063) wifi:station: 5a:6e:ab:06:e3:9d leave, AID = 2, reason = 2, bss_flags is 756835, bss:0x4082e910[0m
+[0;32mI (60073) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (60083) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (60083) wifi:mode : sta (3c:dc:75:80:f1:b0)[0m
+[0;33mW (60093) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (60093) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (60593) deauther: 📻 Locking to channel 56...[0m
+[0;32mI (60793) deauther: 💥 ATTACK STARTED - FLOODING TARGET![0m
+[0;32mI (60793) deauther: [0m
+[0;32mI (62393) deauther: 💥 [ 2/90 sec] Packets:   4000 | PPS:   2000 | Remaining: 88 sec[0m
+[0;32mI (64393) deauther: 💥 [ 4/90 sec] Packets:   9000 | PPS:   2250 | Remaining: 86 sec[0m
+[0;32mI (66393) deauther: 💥 [ 6/90 sec] Packets:  14000 | PPS:   2333 | Remaining: 84 sec[0m
+[0;32mI (68393) deauther: 💥 [ 8/90 sec] Packets:  19000 | PPS:   2375 | Remaining: 82 sec[0m
+[0;32mI (70393) deauther: 💥 [10/90 sec] Packets:  24000 | PPS:   2400 | Remaining: 80 sec[0m
+[0;32mI (72393) deauther: 💥 [12/90 sec] Packets:  29000 | PPS:   2417 | Remaining: 78 sec[0m
+[0;32mI (74393) deauther: 💥 [14/90 sec] Packets:  34000 | PPS:   2429 | Remaining: 76 sec[0m
+[0;32mI (76393) deauther: 💥 [16/90 sec] Packets:  39000 | PPS:   2438 | Remaining: 74 sec[0m
+[0;32mI (78393) deauther: 💥 [18/90 sec] Packets:  44000 | PPS:   2444 | Remaining: 72 sec[0m
+[0;32mI (80393) deauther: 💥 [20/90 sec] Packets:  49000 | PPS:   2450 | Remaining: 70 sec[0m
+[0;32mI (82393) deauther: 💥 [22/90 sec] Packets:  54000 | PPS:   2455 | Remaining: 68 sec[0m
+[0;32mI (84393) deauther: 💥 [24/90 sec] Packets:  59000 | PPS:   2458 | Remaining: 66 sec[0m
+[0;32mI (86393) deauther: 💥 [26/90 sec] Packets:  64000 | PPS:   2462 | Remaining: 64 sec[0m
+[0;32mI (88393) deauther: 💥 [28/90 sec] Packets:  69000 | PPS:   2464 | Remaining: 62 sec[0m
+[0;32mI (90393) deauther: 💥 [30/90 sec] Packets:  74000 | PPS:   2467 | Remaining: 60 sec[0m
+[0;32mI (92393) deauther: 💥 [32/90 sec] Packets:  79000 | PPS:   2469 | Remaining: 58 sec[0m
+[0;32mI (94393) deauther: 💥 [34/90 sec] Packets:  84000 | PPS:   2471 | Remaining: 56 sec[0m
+[0;32mI (96393) deauther: 💥 [36/90 sec] Packets:  89000 | PPS:   2472 | Remaining: 54 sec[0m
+[0;32mI (98393) deauther: 💥 [38/90 sec] Packets:  94000 | PPS:   2474 | Remaining: 52 sec[0m
+[0;32mI (100393) deauther: 💥 [40/90 sec] Packets:  99000 | PPS:   2475 | Remaining: 50 sec[0m
+[0;32mI (102393) deauther: 💥 [42/90 sec] Packets: 104000 | PPS:   2476 | Remaining: 48 sec[0m
+[0;32mI (104393) deauther: 💥 [44/90 sec] Packets: 109000 | PPS:   2477 | Remaining: 46 sec[0m
+[0;32mI (106393) deauther: 💥 [46/90 sec] Packets: 114000 | PPS:   2478 | Remaining: 44 sec[0m
+[0;32mI (108393) deauther: 💥 [48/90 sec] Packets: 119000 | PPS:   2479 | Remaining: 42 sec[0m
+[0;32mI (110393) deauther: 💥 [50/90 sec] Packets: 124000 | PPS:   2480 | Remaining: 40 sec[0m
+[0;32mI (112393) deauther: 💥 [52/90 sec] Packets: 129000 | PPS:   2481 | Remaining: 38 sec[0m
+[0;32mI (114393) deauther: 💥 [54/90 sec] Packets: 134000 | PPS:   2481 | Remaining: 36 sec[0m
+[0;32mI (116393) deauther: 💥 [56/90 sec] Packets: 139000 | PPS:   2482 | Remaining: 34 sec[0m
+[0;32mI (118393) deauther: 💥 [58/90 sec] Packets: 144000 | PPS:   2483 | Remaining: 32 sec[0m
+[0;32mI (120393) deauther: 💥 [60/90 sec] Packets: 149000 | PPS:   2483 | Remaining: 30 sec[0m
+[0;32mI (122393) deauther: 💥 [62/90 sec] Packets: 154000 | PPS:   2484 | Remaining: 28 sec[0m
+[0;32mI (124393) deauther: 💥 [64/90 sec] Packets: 159000 | PPS:   2484 | Remaining: 26 sec[0m
+[0;32mI (126393) deauther: 💥 [66/90 sec] Packets: 164000 | PPS:   2485 | Remaining: 24 sec[0m
+[0;32mI (128393) deauther: 💥 [68/90 sec] Packets: 169000 | PPS:   2485 | Remaining: 22 sec[0m
+[0;32mI (130393) deauther: 💥 [70/90 sec] Packets: 174000 | PPS:   2486 | Remaining: 20 sec[0m
+[0;32mI (132393) deauther: 💥 [72/90 sec] Packets: 179000 | PPS:   2486 | Remaining: 18 sec[0m
+[0;32mI (134393) deauther: 💥 [74/90 sec] Packets: 184000 | PPS:   2486 | Remaining: 16 sec[0m
+[0;32mI (136393) deauther: 💥 [76/90 sec] Packets: 189000 | PPS:   2487 | Remaining: 14 sec[0m
+[0;32mI (138393) deauther: 💥 [78/90 sec] Packets: 194000 | PPS:   2487 | Remaining: 12 sec[0m
+[0;32mI (140393) deauther: 💥 [80/90 sec] Packets: 199000 | PPS:   2488 | Remaining: 10 sec[0m
+[0;32mI (142393) deauther: 💥 [82/90 sec] Packets: 204000 | PPS:   2488 | Remaining:  8 sec[0m
+[0;32mI (144393) deauther: 💥 [84/90 sec] Packets: 209000 | PPS:   2488 | Remaining:  6 sec[0m
+[0;32mI (146393) deauther: 💥 [86/90 sec] Packets: 214000 | PPS:   2488 | Remaining:  4 sec[0m
+[0;32mI (148393) deauther: 💥 [88/90 sec] Packets: 219000 | PPS:   2489 | Remaining:  2 sec[0m
+[0;32mI (150383) deauther: ⏰ Attack duration expired![0m
+[0;32mI (150383) deauther: [0m
+[0;32mI (150383) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (150383) deauther: ║      ATTACK COMPLETED                 ║[0m
+[0;32mI (150393) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (150403) deauther: 📊 Total packets sent: 223975[0m
+[0;32mI (150413) deauther: ⏱️  Total time: 90 seconds[0m
+[0;32mI (150413) deauther: 📈 Average PPS: 2489 packets/sec[0m
+[0;32mI (150423) deauther: 💪 Attack intensity: DEVASTATING[0m
+[0;32mI (150423) deauther: [0m
+[0;32mI (150423) deauther: 🔄 Restoring AP mode...[0m
+[0;32mI (150433) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (150443) wifi:Total power save buffer number: 16[0m
+[0;32mI (150443) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (150443) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (150463) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (150463) wifi:Total power save buffer number: 16[0m
+[0;32mI (150473) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (150473) deauther: ✅ Web interface restored at http://192.168.4.1/[0m
+[0;32mI (150473) deauther: ✅ Ready for next attack. Reconnect to ESP32-Deauther WiFi.[0m
+[0;32mI (172963) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (172963) wifi:(trc)phytype:HT40-SGI, snr:51, maxRate:144, highestRateIdx:0[0m
+[0;33mW (172963) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (172973) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:51, ampduState:wait operational[0m
+[0;32mI (172983) wifi:ifidx:1, rssi:-40, nf:-91, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (172993) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (173003) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (173053) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (173073) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (173093) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (177083) wifi:conn=0x4082fb7c alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (177083) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:89, win:64), CONF:0xc0000001[0m
+[0;33mW (198083) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (198083) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (199323) deauther: 🔍 Starting WiFi scan (2.4GHz + 5GHz)...[0m
+[0;32mI (207523) deauther: ✅ Found 12 networks[0m
+[0;32mI (241313) deauther: [0m
+[0;32mI (241313) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (241313) deauther: ║   AGGRESSIVE DEAUTH ATTACK STARTED    ║[0m
+[0;32mI (241323) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (241333) deauther: 📡 Target SSID: GDR-5G[0m
+[0;32mI (241333) deauther: 🎯 Target BSSID: 54:76:B2:A3:38:FE[0m
+[0;32mI (241343) deauther: 📻 Channel: 56[0m
+[0;32mI (241343) deauther: ⏱️  Duration: 60 seconds[0m
+[0;32mI (241353) deauther: 🔥 Mode: MAXIMUM AGGRESSION[0m
+[0;32mI (241353) deauther: [0m
+[0;32mI (241353) deauther: 🔌 Switching to STA mode (AP disabled)...[0m
+[0;32mI (241363) wifi:station: 90:de:80:97:ac:ce leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x4082b78c[0m
+[0;32mI (241373) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (241383) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (241383) wifi:mode : sta (3c:dc:75:80:f1:b0)[0m
+[0;33mW (241383) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (241393) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (241893) deauther: 📻 Locking to channel 56...[0m
+[0;32mI (242093) deauther: 💥 ATTACK STARTED - FLOODING TARGET![0m
+[0;32mI (242093) deauther: [0m
+[0;32mI (243393) deauther: 💥 [ 2/60 sec] Packets:   3250 | PPS:   1625 | Remaining: 58 sec[0m
+[0;32mI (245393) deauther: 💥 [ 4/60 sec] Packets:   8250 | PPS:   2062 | Remaining: 56 sec[0m
+[0;32mI (247393) deauther: 💥 [ 6/60 sec] Packets:  13250 | PPS:   2208 | Remaining: 54 sec[0m
+[0;32mI (249393) deauther: 💥 [ 8/60 sec] Packets:  18250 | PPS:   2281 | Remaining: 52 sec[0m
+[0;32mI (251393) deauther: 💥 [10/60 sec] Packets:  23250 | PPS:   2325 | Remaining: 50 sec[0m
+[0;32mI (253393) deauther: 💥 [12/60 sec] Packets:  28250 | PPS:   2354 | Remaining: 48 sec[0m
+[0;32mI (255393) deauther: 💥 [14/60 sec] Packets:  33250 | PPS:   2375 | Remaining: 46 sec[0m
+[0;32mI (257393) deauther: 💥 [16/60 sec] Packets:  38250 | PPS:   2391 | Remaining: 44 sec[0m
+[0;32mI (259393) deauther: 💥 [18/60 sec] Packets:  43250 | PPS:   2403 | Remaining: 42 sec[0m
+[0;33mW (1153) wifi:WDEV_RXCCK_DELAY:960[0m
+[0;33mW (1153) wifi:WDEV_RXOFDM_DELAY:257[0m
+[0;33mW (1153) wifi:WDEV_RX_11G_OFDM_DELAY:258[0m
+[0;33mW (1153) wifi:WDEV_TXCCK_DELAY:630[0m
+[0;33mW (1153) wifi:WDEV_TXOFDM_DELAY:94[0m
+[0;33mW (1153) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1163) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1173) wifi:WDEVBEAMFORMCONF:0x61d7120, HE_BF_RPT_RA_SET_OPT:1[0m
+[0;33mW (1173) wifi:WDEVVHTBEAMFORMCONF: 0x61d7120, WDEV_VHT_BEAMFORMEE_ENA: 1, WDEV_VHT_NG_SEL: 0[0m
+[0;33mW (1183) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;33mW (1193) wifi:MODEM_SYSCON_WIFI_BB_CFG_REG(0x600a9c18):0x10003802[0m
+[0;33mW (1203) wifi:(phy)rate:0x0(  LP-1Mbps), pwr:20, txing:20[0m
+[0;33mW (1203) wifi:(phy)rate:0x1(  LP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1213) wifi:(phy)rate:0x2(LP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1213) wifi:(phy)rate:0x3( LP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1223) wifi:(phy)rate:0x5(  SP-2Mbps), pwr:20, txing:20[0m
+[0;33mW (1223) wifi:(phy)rate:0x6(SP-5.5Mbps), pwr:20, txing:20[0m
+[0;33mW (1233) wifi:(phy)rate:0x7( SP-11Mbps), pwr:20, txing:20[0m
+[0;33mW (1233) wifi:(phy)rate:0x8(    48Mbps), pwr:17, txing:17[0m
+[0;33mW (1243) wifi:(phy)rate:0x9(    24Mbps), pwr:19, txing:19[0m
+[0;33mW (1243) wifi:(phy)rate:0xa(    12Mbps), pwr:19, txing:19[0m
+[0;33mW (1253) wifi:(phy)rate:0xb(     6Mbps), pwr:19, txing:19[0m
+[0;33mW (1253) wifi:(phy)rate:0xc(    54Mbps), pwr:17, txing:17[0m
+[0;33mW (1263) wifi:(phy)rate:0xd(    36Mbps), pwr:19, txing:19[0m
+[0;33mW (1263) wifi:(phy)rate:0xe(    18Mbps), pwr:19, txing:19[0m
+[0;33mW (1273) wifi:(phy)rate:0xf(     9Mbps), pwr:19, txing:19[0m
+[0;33mW (1273) wifi:(phy)rate:0x10, mcs:0x0, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (1283) wifi:(phy)rate:0x11, mcs:0x1, pwr(bw20:19, bw40:18), txing:19, HE pwr(bw20:19), txing:19[0m
+[0;33mW (1293) wifi:(phy)rate:0x12, mcs:0x2, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (1303) wifi:(phy)rate:0x13, mcs:0x3, pwr(bw20:18, bw40:17), txing:18, HE pwr(bw20:18), txing:18[0m
+[0;33mW (1313) wifi:(phy)rate:0x14, mcs:0x4, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1323) wifi:(phy)rate:0x15, mcs:0x5, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1333) wifi:(phy)rate:0x16, mcs:0x6, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1333) wifi:(phy)rate:0x17, mcs:0x7, pwr(bw20:17, bw40:16), txing:17, HE pwr(bw20:17), txing:17[0m
+[0;33mW (1343) wifi:(phy)rate:0x18, mcs:0x8, pwr(bw20:19, bw40:16), txing:19, HE pwr(bw20:16), txing:16[0m
+[0;33mW (1353) wifi:(phy)rate:0x19, mcs:0x9, pwr(bw20:18, bw40:16), txing:18, HE pwr(bw20:15), txing:15[0m
+[0;33mW (1363) wifi:(hal)co_hosted_bss:0, max_indicator:0, bitmask:0xff, mBSSIDsEnable:0[0m
+[0;32mI (1373) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1373) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (1383) wifi:enable tsf[0m
+[0;33mW (1383) wifi:(BB)enable busy check(0x18), disable idle check(0xaa)[0m
+[0;33mW (1393) wifi:11ax/11ac mode can not work under phy bw 40M, the sta 2G phymode changed to 11N[0m
+[0;33mW (1403) wifi:11ax/11ac mode can not work under phy bw 40M, the sta 5G phymode changed to 11N[0m
+[0;32mI (1413) wifi:Total power save buffer number: 16[0m
+[0;32mI (1413) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1413) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1423) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1433) deauther: [0m
+[0;32mI (1433) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (1443) deauther: ║   ESP32-C5 DEAUTHER - AP MODE         ║[0m
+[0;32mI (1453) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (1463) deauther: 📡 SSID: ESP32-Deauther[0m
+[0;32mI (1463) deauther: 🔑 Password: 12345678[0m
+[0;32mI (1473) deauther: 🌐 Web Interface: http://192.168.4.1/[0m
+[0;32mI (1473) deauther: ⚠️  USE ONLY ON YOUR OWN NETWORKS![0m
+[0;32mI (1483) deauther: [0m
+[0;32mI (1483) deauther: ✅ Web server started[0m
+[0;32mI (6853) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6853) wifi:(trc)phytype:HT40-SGI, snr:50, maxRate:144, highestRateIdx:0[0m
+[0;33mW (6863) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (6863) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:50, ampduState:wait operational[0m
+[0;32mI (6883) wifi:ifidx:1, rssi:-41, nf:-91, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (6893) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (6893) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (6933) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (7033) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (7033) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (9503) wifi:conn=0x4082a2e0 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (9503) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:61, win:64), CONF:0xc0000001[0m
+[0;32mI (12413) deauther: [0m
+[0;32mI (12413) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (12423) deauther: ║   AGGRESSIVE DEAUTH ATTACK STARTED    ║[0m
+[0;32mI (12423) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (12433) deauther: 📡 Target SSID: GDR-5G[0m
+[0;32mI (12443) deauther: 🎯 Target BSSID: 54:76:B2:A3:38:FE[0m
+[0;32mI (12443) deauther: 📻 Channel: 56[0m
+[0;32mI (12453) deauther: ⏱️  Duration: 60 seconds[0m
+[0;32mI (12453) deauther: 🔥 Mode: MAXIMUM AGGRESSION[0m
+[0;32mI (12463) deauther: [0m
+[0;32mI (12463) deauther: 🔌 Switching to STA mode (AP disabled)...[0m
+[0;32mI (12463) wifi:station: 90:de:80:97:ac:ce leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x4082dd60[0m
+[0;32mI (12473) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (12483) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (12483) wifi:mode : sta (3c:dc:75:80:f1:b0)[0m
+[0;33mW (12433) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (12493) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[1;31mE (12503) httpd: httpd_accept_conn: error in accept (128)[0m
+[0;33mW (12503) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (13003) deauther: 📻 Locking to channel 56...[0m
+[0;32mI (13203) deauther: 💥 ATTACK STARTED - FLOODING TARGET![0m
+[0;32mI (13203) deauther: [0m
+[0;32mI (14393) deauther: 💥 [ 2/60 sec] Packets:   2975 | PPS:   1488 | Remaining: 58 sec[0m
+[0;32mI (16393) deauther: 💥 [ 4/60 sec] Packets:   7975 | PPS:   1994 | Remaining: 56 sec[0m
+[0;32mI (18393) deauther: 💥 [ 6/60 sec] Packets:  12975 | PPS:   2162 | Remaining: 54 sec[0m
+[0;32mI (20393) deauther: 💥 [ 8/60 sec] Packets:  17975 | PPS:   2247 | Remaining: 52 sec[0m
+[0;32mI (22393) deauther: 💥 [10/60 sec] Packets:  22975 | PPS:   2298 | Remaining: 50 sec[0m
+[0;32mI (24393) deauther: 💥 [12/60 sec] Packets:  27975 | PPS:   2331 | Remaining: 48 sec[0m
+[0;32mI (26393) deauther: 💥 [14/60 sec] Packets:  32975 | PPS:   2355 | Remaining: 46 sec[0m
+[0;32mI (28393) deauther: 💥 [16/60 sec] Packets:  37975 | PPS:   2373 | Remaining: 44 sec[0m
+[0;32mI (30393) deauther: 💥 [18/60 sec] Packets:  42975 | PPS:   2388 | Remaining: 42 sec[0m
+[0;32mI (32393) deauther: 💥 [20/60 sec] Packets:  47975 | PPS:   2399 | Remaining: 40 sec[0m
+[0;32mI (34393) deauther: 💥 [22/60 sec] Packets:  52975 | PPS:   2408 | Remaining: 38 sec[0m
+[0;32mI (36393) deauther: 💥 [24/60 sec] Packets:  57975 | PPS:   2416 | Remaining: 36 sec[0m
+[0;32mI (38393) deauther: 💥 [26/60 sec] Packets:  62975 | PPS:   2422 | Remaining: 34 sec[0m
+[0;32mI (40393) deauther: 💥 [28/60 sec] Packets:  67975 | PPS:   2428 | Remaining: 32 sec[0m
+[0;32mI (42393) deauther: 💥 [30/60 sec] Packets:  72975 | PPS:   2432 | Remaining: 30 sec[0m
+[0;32mI (44393) deauther: 💥 [32/60 sec] Packets:  77975 | PPS:   2437 | Remaining: 28 sec[0m
+[0;32mI (46393) deauther: 💥 [34/60 sec] Packets:  82975 | PPS:   2440 | Remaining: 26 sec[0m
+[0;32mI (48393) deauther: 💥 [36/60 sec] Packets:  87975 | PPS:   2444 | Remaining: 24 sec[0m
+[0;32mI (50393) deauther: 💥 [38/60 sec] Packets:  92975 | PPS:   2447 | Remaining: 22 sec[0m
+[0;32mI (52393) deauther: 💥 [40/60 sec] Packets:  97975 | PPS:   2449 | Remaining: 20 sec[0m
+[0;32mI (54393) deauther: 💥 [42/60 sec] Packets: 102975 | PPS:   2452 | Remaining: 18 sec[0m
+[0;32mI (56393) deauther: 💥 [44/60 sec] Packets: 107975 | PPS:   2454 | Remaining: 16 sec[0m
+[0;32mI (58393) deauther: 💥 [46/60 sec] Packets: 112975 | PPS:   2456 | Remaining: 14 sec[0m
+[0;32mI (60393) deauther: 💥 [48/60 sec] Packets: 117975 | PPS:   2458 | Remaining: 12 sec[0m
+[0;32mI (62393) deauther: 💥 [50/60 sec] Packets: 122975 | PPS:   2460 | Remaining: 10 sec[0m
+[0;32mI (64393) deauther: 💥 [52/60 sec] Packets: 127975 | PPS:   2461 | Remaining:  8 sec[0m
+[0;32mI (66393) deauther: 💥 [54/60 sec] Packets: 132975 | PPS:   2462 | Remaining:  6 sec[0m
+[0;32mI (68393) deauther: 💥 [56/60 sec] Packets: 137975 | PPS:   2464 | Remaining:  4 sec[0m
+[0;32mI (70393) deauther: 💥 [58/60 sec] Packets: 142975 | PPS:   2465 | Remaining:  2 sec[0m
+[0;32mI (72383) deauther: ⏰ Attack duration expired![0m
+[0;32mI (72383) deauther: [0m
+[0;32mI (72383) deauther: ╔════════════════════════════════════════╗[0m
+[0;32mI (72383) deauther: ║      ATTACK COMPLETED                 ║[0m
+[0;32mI (72393) deauther: ╚════════════════════════════════════════╝[0m
+[0;32mI (72403) deauther: 📊 Total packets sent: 147950[0m
+[0;32mI (72413) deauther: ⏱️  Total time: 60 seconds[0m
+[0;32mI (72413) deauther: 📈 Average PPS: 2466 packets/sec[0m
+[0;32mI (72423) deauther: 💪 Attack intensity: DEVASTATING[0m
+[0;32mI (72423) deauther: [0m
+[0;32mI (72423) deauther: 🔄 Restoring AP mode...[0m
+[0;32mI (72433) wifi:mode : sta (3c:dc:75:80:f1:b0) + softAP (3c:dc:75:80:f1:b1)[0m
+[0;32mI (72443) wifi:Total power save buffer number: 16[0m
+[0;32mI (72443) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (72443) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (72463) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (72463) wifi:Total power save buffer number: 16[0m
+[0;32mI (72473) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (72473) deauther: ✅ Web interface restored at http://192.168.4.1/[0m
+[0;32mI (72473) deauther: ✅ Ready for next attack. Reconnect to ESP32-Deauther WiFi.[0m
+[0;32mI (75823) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (75823) wifi:(trc)phytype:HT40-SGI, snr:50, maxRate:144, highestRateIdx:0[0m
+[0;33mW (75823) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (75833) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:50, ampduState:wait operational[0m
+[0;32mI (75843) wifi:ifidx:1, rssi:-43, nf:-93, phytype(0x5, HT40-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (75853) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;32mI (75863) wifi:station: 90:de:80:97:ac:ce join, AID=1, bgn, 40U[0m
+[0;32mI (75893) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (75923) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (75933) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (79943) wifi:conn=0x4082ab10 alloc softap rx ba index=0 ba index 8[0m
+[0;32mI (79943) wifi:<ba-add>extra, idx:0, ifx:1, tid:0, TAHI:0x101ceac, TALO:0x9780de90, (ssn:97, win:64), CONF:0xc0000001[0m

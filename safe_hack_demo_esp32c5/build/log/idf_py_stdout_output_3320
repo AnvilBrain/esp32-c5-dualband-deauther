@@ -1,0 +1,187 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c5
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/cjson (1.7.19)
+NOTICE: [2/2] idf (6.0.0)
+-- Project sdkconfig file C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/sdkconfig
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/riscv/ld/rom.api.ld
+-- USING O3
+-- App "safe_hack_demo_esp32c5" version: 1
+-- Adding linker script C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.api.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.rvfp.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.wdt.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.systimer.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.version.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.phy.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.coexist.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.net80211.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.pp.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.libc.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.newlib.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.heap.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/soc/esp32c5/ld/esp32c5.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__cjson esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: C:/Users/user/Desktop/esp-idf/components/app_trace C:/Users/user/Desktop/esp-idf/components/app_update C:/Users/user/Desktop/esp-idf/components/bootloader C:/Users/user/Desktop/esp-idf/components/bootloader_support C:/Users/user/Desktop/esp-idf/components/bt C:/Users/user/Desktop/esp-idf/components/cmock C:/Users/user/Desktop/esp-idf/components/console C:/Users/user/Desktop/esp-idf/components/cxx C:/Users/user/Desktop/esp-idf/components/driver C:/Users/user/Desktop/esp-idf/components/efuse C:/Users/user/Desktop/esp-idf/components/esp-tls C:/Users/user/Desktop/esp-idf/components/esp_adc C:/Users/user/Desktop/esp-idf/components/esp_app_format C:/Users/user/Desktop/esp-idf/components/esp_bootloader_format C:/Users/user/Desktop/esp-idf/components/esp_coex C:/Users/user/Desktop/esp-idf/components/esp_common C:/Users/user/Desktop/esp-idf/components/esp_driver_ana_cmpr C:/Users/user/Desktop/esp-idf/components/esp_driver_bitscrambler C:/Users/user/Desktop/esp-idf/components/esp_driver_cam C:/Users/user/Desktop/esp-idf/components/esp_driver_dac C:/Users/user/Desktop/esp-idf/components/esp_driver_gpio C:/Users/user/Desktop/esp-idf/components/esp_driver_gptimer C:/Users/user/Desktop/esp-idf/components/esp_driver_i2c C:/Users/user/Desktop/esp-idf/components/esp_driver_i2s C:/Users/user/Desktop/esp-idf/components/esp_driver_isp C:/Users/user/Desktop/esp-idf/components/esp_driver_jpeg C:/Users/user/Desktop/esp-idf/components/esp_driver_ledc C:/Users/user/Desktop/esp-idf/components/esp_driver_mcpwm C:/Users/user/Desktop/esp-idf/components/esp_driver_parlio C:/Users/user/Desktop/esp-idf/components/esp_driver_pcnt C:/Users/user/Desktop/esp-idf/components/esp_driver_ppa C:/Users/user/Desktop/esp-idf/components/esp_driver_rmt C:/Users/user/Desktop/esp-idf/components/esp_driver_sd_intf C:/Users/user/Desktop/esp-idf/components/esp_driver_sdio C:/Users/user/Desktop/esp-idf/components/esp_driver_sdm C:/Users/user/Desktop/esp-idf/components/esp_driver_sdmmc C:/Users/user/Desktop/esp-idf/components/esp_driver_sdspi C:/Users/user/Desktop/esp-idf/components/esp_driver_spi C:/Users/user/Desktop/esp-idf/components/esp_driver_touch_sens C:/Users/user/Desktop/esp-idf/components/esp_driver_tsens C:/Users/user/Desktop/esp-idf/components/esp_driver_twai C:/Users/user/Desktop/esp-idf/components/esp_driver_uart C:/Users/user/Desktop/esp-idf/components/esp_driver_usb_serial_jtag C:/Users/user/Desktop/esp-idf/components/esp_eth C:/Users/user/Desktop/esp-idf/components/esp_event C:/Users/user/Desktop/esp-idf/components/esp_gdbstub C:/Users/user/Desktop/esp-idf/components/esp_hid C:/Users/user/Desktop/esp-idf/components/esp_http_client C:/Users/user/Desktop/esp-idf/components/esp_http_server C:/Users/user/Desktop/esp-idf/components/esp_https_ota C:/Users/user/Desktop/esp-idf/components/esp_https_server C:/Users/user/Desktop/esp-idf/components/esp_hw_support C:/Users/user/Desktop/esp-idf/components/esp_lcd C:/Users/user/Desktop/esp-idf/components/esp_local_ctrl C:/Users/user/Desktop/esp-idf/components/esp_mm C:/Users/user/Desktop/esp-idf/components/esp_netif C:/Users/user/Desktop/esp-idf/components/esp_netif_stack C:/Users/user/Desktop/esp-idf/components/esp_partition C:/Users/user/Desktop/esp-idf/components/esp_phy C:/Users/user/Desktop/esp-idf/components/esp_pm C:/Users/user/Desktop/esp-idf/components/esp_psram C:/Users/user/Desktop/esp-idf/components/esp_ringbuf C:/Users/user/Desktop/esp-idf/components/esp_rom C:/Users/user/Desktop/esp-idf/components/esp_security C:/Users/user/Desktop/esp-idf/components/esp_system C:/Users/user/Desktop/esp-idf/components/esp_timer C:/Users/user/Desktop/esp-idf/components/esp_vfs_console C:/Users/user/Desktop/esp-idf/components/esp_wifi C:/Users/user/Desktop/esp-idf/components/espcoredump C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/managed_components/espressif__cjson C:/Users/user/Desktop/esp-idf/components/esptool_py C:/Users/user/Desktop/esp-idf/components/fatfs C:/Users/user/Desktop/esp-idf/components/freertos C:/Users/user/Desktop/esp-idf/components/hal C:/Users/user/Desktop/esp-idf/components/heap C:/Users/user/Desktop/esp-idf/components/http_parser C:/Users/user/Desktop/esp-idf/components/idf_test C:/Users/user/Desktop/esp-idf/components/ieee802154 C:/Users/user/Desktop/esp-idf/components/json C:/Users/user/Desktop/esp-idf/components/log C:/Users/user/Desktop/esp-idf/components/lwip C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/main C:/Users/user/Desktop/esp-idf/components/mbedtls C:/Users/user/Desktop/esp-idf/components/mqtt C:/Users/user/Desktop/esp-idf/components/newlib C:/Users/user/Desktop/esp-idf/components/nvs_flash C:/Users/user/Desktop/esp-idf/components/nvs_sec_provider C:/Users/user/Desktop/esp-idf/components/openthread C:/Users/user/Desktop/esp-idf/components/partition_table C:/Users/user/Desktop/esp-idf/components/protobuf-c C:/Users/user/Desktop/esp-idf/components/protocomm C:/Users/user/Desktop/esp-idf/components/pthread C:/Users/user/Desktop/esp-idf/components/riscv C:/Users/user/Desktop/esp-idf/components/rt C:/Users/user/Desktop/esp-idf/components/sdmmc C:/Users/user/Desktop/esp-idf/components/soc C:/Users/user/Desktop/esp-idf/components/spi_flash C:/Users/user/Desktop/esp-idf/components/spiffs C:/Users/user/Desktop/esp-idf/components/tcp_transport C:/Users/user/Desktop/esp-idf/components/ulp C:/Users/user/Desktop/esp-idf/components/unity C:/Users/user/Desktop/esp-idf/components/usb C:/Users/user/Desktop/esp-idf/components/vfs C:/Users/user/Desktop/esp-idf/components/wear_levelling C:/Users/user/Desktop/esp-idf/components/wifi_provisioning C:/Users/user/Desktop/esp-idf/components/wpa_supplicant
+-- Configuring done (9.3s)
+-- Generating done (2.2s)
+-- Build files have been written to: C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build
+[1/9] Generating esp-idf/esp_system/ld/sections.ld
+[2/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32c5
+-- Project sdkconfig file C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/sdkconfig
+info: Default value for ESP_PERIPH_CTRL_FUNC_IN_IRAM in sdkconfig is y but it is n according to Kconfig.
+Using default value from sdkconfig (y).
+info: Default value for GDMA_CTRL_FUNC_IN_IRAM in sdkconfig is y but it is n according to Kconfig.
+Using default value from sdkconfig (y).
+Configuration Report                                                           
++-----------------------------------------------------------------------------+
+|  Parser Version: 1                                                          |
+|  Verbosity: default                                                         |
+|  Defaults policy: sdkconfig                                                 |
+|  Status: Finished with notifications                                        |
+|                                                                             |
+| Miscellaneous                                                               |
+| +-------------------------------------------------------------------------+ |
+| | * Trying to set symbol ESPTOOLPY_FLASHFREQ_80M to n, but it is          | |
+| | currently selected by choice ESPTOOLPY_FLASHFREQ. For setting it to n,  | |
+| | set another choice symbol to y instead.                                 | |
+| +-------------------------------------------------------------------------+ |
+| Default Value Mismatch                                                      |
+| +-------------------------------------------------------------------------+ |
+| | Using sdkconfig default values                                       |  | |
+| | Choice symbols with different default selection between sdkconfig    |  | |
+| | and Kconfig                                                          |  | |
+| | LIBC_STDIN_LINE_ENDING: Kconfig default selection: choice            |  | |
+| | deselected, sdkconfig default selection: LIBC_STDIN_LINE_ENDING_CR   |  | |
+| | LIBC_STDOUT_LINE_ENDING: Kconfig default selection: choice           |  | |
+| | deselected, sdkconfig default selection:                             |  | |
+| | LIBC_STDOUT_LINE_ENDING_CRLF                                         |  | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/riscv/ld/rom.api.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/soc/esp32c5/ld/esp32c5.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.api.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.rvfp.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.wdt.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.systimer.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.version.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.libc.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/esp_rom/esp32c5/ld/esp32c5.rom.newlib.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/bootloader/subproject/main/ld/esp32c5/bootloader.ld
+-- Adding linker script C:/Users/user/Desktop/esp-idf/components/bootloader/subproject/main/ld/esp32c5/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table riscv soc spi_flash
+-- Component paths: C:/Users/user/Desktop/esp-idf/components/bootloader C:/Users/user/Desktop/esp-idf/components/bootloader_support C:/Users/user/Desktop/esp-idf/components/efuse C:/Users/user/Desktop/esp-idf/components/esp_app_format C:/Users/user/Desktop/esp-idf/components/esp_bootloader_format C:/Users/user/Desktop/esp-idf/components/esp_common C:/Users/user/Desktop/esp-idf/components/esp_hw_support C:/Users/user/Desktop/esp-idf/components/esp_rom C:/Users/user/Desktop/esp-idf/components/esp_security C:/Users/user/Desktop/esp-idf/components/esp_system C:/Users/user/Desktop/esp-idf/components/esptool_py C:/Users/user/Desktop/esp-idf/components/freertos C:/Users/user/Desktop/esp-idf/components/hal C:/Users/user/Desktop/esp-idf/components/log C:/Users/user/Desktop/esp-idf/components/bootloader/subproject/main C:/Users/user/Desktop/esp-idf/components/bootloader/subproject/components/micro-ecc C:/Users/user/Desktop/esp-idf/components/newlib C:/Users/user/Desktop/esp-idf/components/partition_table C:/Users/user/Desktop/esp-idf/components/riscv C:/Users/user/Desktop/esp-idf/components/soc C:/Users/user/Desktop/esp-idf/components/spi_flash
+-- Configuring done (6.6s)
+-- Generating done (0.5s)
+-- Build files have been written to: C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/bootloader
+[1/2] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\esp-idf\esptool_py && C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:/Users/user/Desktop/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/bootloader/bootloader.bin"
+Bootloader binary size 0x55b0 bytes. 0xa50 bytes (11%) free.
+[3/9] No install step for 'bootloader'
+[4/9] Completed 'bootloader'
+[5/9] Linking CXX executable safe_hack_demo_esp32c5.elf
+[6/9] Generating binary image from built executable
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+esptool v5.1.0
+Creating ESP32C5 image...
+Merged 1 ELF section.
+Successfully created ESP32C5 image.
+Generated C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/safe_hack_demo_esp32c5.bin
+[7/9] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\esp-idf\esptool_py && C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:/Users/user/Desktop/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/partition_table/partition-table.bin C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build/safe_hack_demo_esp32c5.bin"
+safe_hack_demo_esp32c5.bin binary size 0xee970 bytes. Smallest app partition is 0x100000 bytes. 0x11690 bytes (7%) free.
+[7/9] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\user\Desktop\esp-idf\components\esptool_py && C:\Users\user\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/user/Desktop/esp-idf -D SERIAL_TOOL=C:/Users/user/.espressif/python_env/idf6.0_py3.13_env/Scripts/python.exe;;C:/Users/user/Desktop/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c5 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/user/Desktop/esp32/safe_hack_demo_esp32c5/build -P C:/Users/user/Desktop/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool --chip esp32c5 -p COM12 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x2000 bootloader/bootloader.bin 0x10000 safe_hack_demo_esp32c5.bin 0x8000 partition_table/partition-table.bin
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+Warning: Deprecated: Choice 'default_reset' for option '--before' is deprecated. Use 'default-reset' instead.
+Warning: Deprecated: Choice 'hard_reset' for option '--after' is deprecated. Use 'hard-reset' instead.
+Warning: Deprecated: Command 'write_flash' is deprecated. Use 'write-flash' instead.
+esptool v5.1.0
+Serial port COM12:
+Connecting....
+Connected to ESP32-C5 on COM12:
+Chip type:          ESP32-C5 (revision v1.0)
+Features:           Wi-Fi 6 (dual-band), BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 240MHz
+Crystal frequency:  48MHz
+MAC:                3c:dc:75:ff:fe:80:f1:b0
+BASE MAC:           3c:dc:75:80:f1:b0
+MAC_EXT:            ff:fe
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fefff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated.
+Compressed 21936 bytes to 13421...
+Writing at 0x00002000 [                              ]   0.0% 0/13421 bytes... 
+Writing at 0x000075b0 [==============================] 100.0% 13421/13421 bytes... 
+Wrote 21936 bytes (13421 compressed) at 0x00002000 in 0.5 seconds (343.3 kbit/s).
+Hash of data verified.
+Compressed 977264 bytes to 557310...
+Writing at 0x00010000 [                              ]   0.0% 0/557310 bytes... 
+Writing at 0x0001bf8c [                              ]   2.9% 16384/557310 bytes... 
+Writing at 0x00025adf [>                             ]   5.9% 32768/557310 bytes... 
+Writing at 0x000308ee [=>                            ]   8.8% 49152/557310 bytes... 
+Writing at 0x0003711e [==>                           ]  11.8% 65536/557310 bytes... 
+Writing at 0x0003e0ac [===>                          ]  14.7% 81920/557310 bytes... 
+Writing at 0x000446e0 [====>                         ]  17.6% 98304/557310 bytes... 
+Writing at 0x0004c231 [=====>                        ]  20.6% 114688/557310 bytes... 
+Writing at 0x000537b2 [======>                       ]  23.5% 131072/557310 bytes... 
+Writing at 0x0005a614 [======>                       ]  26.5% 147456/557310 bytes... 
+Writing at 0x000613db [=======>                      ]  29.4% 163840/557310 bytes... 
+Writing at 0x000679dc [========>                     ]  32.3% 180224/557310 bytes... 
+Writing at 0x0006e4df [=========>                    ]  35.3% 196608/557310 bytes... 
+Writing at 0x00074b5c [==========>                   ]  38.2% 212992/557310 bytes... 
+Writing at 0x0007a86a [===========>                  ]  41.2% 229376/557310 bytes... 
+Writing at 0x0008075c [============>                 ]  44.1% 245760/557310 bytes... 
+Writing at 0x0008682c [=============>                ]  47.0% 262144/557310 bytes... 
+Writing at 0x0008c7b5 [=============>                ]  50.0% 278528/557310 bytes... 
+Writing at 0x000928e2 [==============>               ]  52.9% 294912/557310 bytes... 
+Writing at 0x000989a8 [===============>              ]  55.9% 311296/557310 bytes... 
+Writing at 0x0009e8f7 [================>             ]  58.8% 327680/557310 bytes... 
+Writing at 0x000a5254 [=================>            ]  61.7% 344064/557310 bytes... 
+Writing at 0x000abae0 [==================>           ]  64.7% 360448/557310 bytes... 
+Writing at 0x000b2ce6 [===================>          ]  67.6% 376832/557310 bytes... 
+Writing at 0x000b9e07 [====================>         ]  70.6% 393216/557310 bytes... 
+Writing at 0x000c0b26 [=====================>        ]  73.5% 409600/557310 bytes... 
+Writing at 0x000c6e42 [=====================>        ]  76.4% 425984/557310 bytes... 
+Writing at 0x000cd139 [======================>       ]  79.4% 442368/557310 bytes... 
+Writing at 0x000d3f68 [=======================>      ]  82.3% 458752/557310 bytes... 
+Writing at 0x000da7ef [========================>     ]  85.3% 475136/557310 bytes... 
+Writing at 0x000e01b4 [=========================>    ]  88.2% 491520/557310 bytes... 
+Writing at 0x000e6025 [==========================>   ]  91.1% 507904/557310 bytes... 
+Writing at 0x000eea95 [===========================>  ]  94.1% 524288/557310 bytes... 
+Writing at 0x000f61f0 [============================> ]  97.0% 540672/557310 bytes... 
+Writing at 0x000fe741 [============================> ] 100.0% 557056/557310 bytes... 
+Writing at 0x000fe970 [==============================] 100.0% 557310/557310 bytes... 
+Wrote 977264 bytes (557310 compressed) at 0x00010000 in 14.7 seconds (533.3 kbit/s).
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000 [                              ]   0.0% 0/103 bytes... 
+Writing at 0x00008c00 [==============================] 100.0% 103/103 bytes... 
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (227.6 kbit/s).
+Hash of data verified.
+
+Hard resetting via RTS pin...

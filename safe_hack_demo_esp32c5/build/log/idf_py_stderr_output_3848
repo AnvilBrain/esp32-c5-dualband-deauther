@@ -1,0 +1,27 @@
+Command: C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:\Users\user\Desktop\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\safe_hack_demo_esp32c5.elf C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\bootloader.elf --force-color -m 'C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'C:\Users\user\Desktop\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4084bba0: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/Users/user/Desktop/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4084e5a0: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mC:/Users/user/Desktop/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4084bbaa: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Users/user/Desktop/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1214, in communicate
+    self.wait()
+    ~~~~~~~~~^^
+  File "C:\Python313\Lib\subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1606, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+                                         timeout_millis)
+KeyboardInterrupt

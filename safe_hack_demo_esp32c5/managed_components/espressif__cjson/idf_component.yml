@@ -1,0 +1,9 @@
+dependencies:
+  idf: '>=5.0'
+description: 'cJSON: Ultralightweight JSON parser in ANSI C'
+repository: git://github.com/espressif/idf-extra-components.git
+repository_info:
+  commit_sha: 721d625669f4e4fdfe6e02cf7e11f15b33f13e3a
+  path: cjson
+url: https://github.com/espressif/idf-extra-components/tree/master/cjson
+version: 1.7.19

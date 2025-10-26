@@ -1,0 +1,15 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5
+Configuration Report                                                           
++-----------------------------------------------------------------------------+
+|  Parser Version: 1                                                          |
+|  Verbosity: default                                                         |
+|  Defaults policy: sdkconfig                                                 |
+|  Status: Finished with notifications                                        |
+|                                                                             |
+| Miscellaneous                                                               |
+| +-------------------------------------------------------------------------+ |
+| | * Trying to set symbol ESPTOOLPY_FLASHFREQ_80M to n, but it is          | |
+| | currently selected by choice ESPTOOLPY_FLASHFREQ. For setting it to n,  | |
+| | set another choice symbol to y instead.                                 | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+

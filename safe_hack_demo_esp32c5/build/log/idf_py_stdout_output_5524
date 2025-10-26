@@ -1,0 +1,40 @@
+Command: C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe C:\Users\user\Desktop\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c5 --revision 100 --decode-panic backtrace C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\safe_hack_demo_esp32c5.elf C:\Users\user\Desktop\esp32\safe_hack_demo_esp32c5\build\bootloader\bootloader.elf --force-color -m 'C:\Users\user\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'C:\Users\user\Desktop\esp-idf\tools\idf.py'
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+assertion "result == ETS_OK" failed: file "ets_main.c", line 369, function: ets_flash_boot
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x7 (TG0_WDT_HPSYS),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40026cfc
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+assertion "result == ETS_OK" failed: file "ets_main.c", line 369, function: ets_flash_boot
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x7 (TG0_WDT_HPSYS),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40026cfc
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+assertion "result == ETS_OK" failed: file "ets_main.c", line 369, function: ets_flash_boot
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x7 (TG0_WDT_HPSYS),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40026cfc
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+assertion "result == ETS_OK" failed: file "ets_main.c", line 369, function: ets_flash_boot
+ESP-ROM:esp32c5-eco2-20250121
+Build:Jan 21 2025
+rst:0x7 (TG0_WDT_HPSYS),boot:0x18 (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40026cfc
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+invalid header: 0x200007b7
+assertion "result == ETS_OK" failed: file "ets_main.c", line 369, function: ets_flash_boot
