@@ -15,7 +15,7 @@ source export.sh
 **Flash Only (NO BUILD):**
 
 ```bash
-git clone https://github.com/yourusername/esp32-c5-dualband-deauther
+git clone https://github.com/AnvilBrain/esp32-c5-dualband-deauther
 cd esp32-c5-dualband-deauther
 idf.py -p /your/port flash monitor
 ```
