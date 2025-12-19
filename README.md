@@ -42,6 +42,7 @@ cd components\esp_wifi\lib\esp32c5
 git clone https://github.com/AnvilBrain/esp32-c5-dualband-deauther
 cd esp32-c5-dualband-deauther
 cd safe_hack_demo_esp32c5
+rmdir /s /q C:\Users\user\esp-idf\esp32-c5-dualband-deauther\safe_hack_demo_esp32c5\managed_components\espressif__cjson
 idf.py fullclean
 idf.py build
 idf.py -p COM3 flash monitor
