@@ -50,6 +50,8 @@ idf.py -p COM3 flash monitor
 
 > **Note:** Replace `COM3` with your actual serial port (e.g., `/dev/ttyUSB0` on Linux, `/dev/cu.usbserial` on macOS)
 
+password:2444666668888888
+
 ---
 
 ## ✨ Features
