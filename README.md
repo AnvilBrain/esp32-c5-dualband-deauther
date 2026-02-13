@@ -10,16 +10,16 @@ A dual-band (2.4GHz/5GHz) network testing tool for the ESP32-C5 microcontroller.
 
 ### Prerequisites
 
-- ESP-IDF v5.5
+- ESP-IDF v5.5.1
 - ESP32-C5 development board
 - USB cable for flashing
 
 ### Installation
 
-**1. Install ESP-IDF (v5.5)**
+**1. Install ESP-IDF (v5.5.1)**
 
 ```bash
-git clone -b release/v5.5 --recursive https://github.com/espressif/esp-idf.git
+git clone --recursive --branch v5.5.1 https://github.com/espressif/esp-idf.git
 cd esp-idf
 install.bat
 export.bat
@@ -35,6 +35,7 @@ cd components\esp_wifi\lib\esp32c5
 
 - Delete the existing `libnet80211.a` file
 - Replace it with the patched version from the `patched_libnet` folder in this repository
+- go back to esp-idf folder
 
 **3. Build and Flash**
 
@@ -72,6 +73,27 @@ password:2444666668888888
 - 🚫 **Illegal use is prohibited** - Unauthorized network interference is a crime in most jurisdictions
 - ⚖️ **You are solely responsible** - The developers assume no liability for misuse of this tool
 - 📚 **Educational purpose** - This tool is designed for learning network security concepts
+
+---
+
+## 📦 Project Status
+
+**🔒 PROJECT NO LONGER MAINTAINED**
+
+This project is provided "as-is" and is no longer actively maintained:
+
+- ❌ **No issue support** - Issues will not be addressed or closed
+- 🤖 **Self-help approach** - If something breaks, please consult AI assistants (ChatGPT, Claude, etc.) for troubleshooting
+- ✅ **Stable foundation** - The project should work as documented; if issues arise, they're likely environment-specific
+- 🚀 **New horizons** - The developer is working on more advanced projects
+
+**If you encounter problems:**
+1. Double-check your setup matches the prerequisites
+2. Ask an AI assistant for help with error messages
+3. Search existing issues (though they won't be answered)
+4. Fork and fix it yourself - PRs may still be considered
+
+Thank you for your understanding!
 
 ---
 
